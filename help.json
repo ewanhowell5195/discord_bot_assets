@@ -127,7 +127,8 @@
 			"emoji               [emoji]",
 			"imgur               [imageURL]",
 			"mock                [text]",
-			"serverinfo          [n/a]"
+			"serverinfo          [n/a]",
+			"translate           [language][message]"
 		],
 		"media": [
 			"movie               [name]",
@@ -620,6 +621,12 @@
 			"Formatting": "setmembercounter [channelID][customText]",
 			"Aliases": "[setmembercounter] [smc] [membercounter]",
 			"Permissions": "Administrator"
+		},
+		"translate": {
+			"Description": "Translate a message into another language.\nTranslates to English if no language is specified.\nList all languages with `e!translate`",
+			"Formatting": "translate [language][message]",
+			"Aliases": "[translate]",
+			"Permissions": "@everyone"
 		}
 	}
 }
