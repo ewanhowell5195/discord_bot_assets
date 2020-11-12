@@ -2,6 +2,7 @@
 	"help": [
 		"- Bot -",
 		"- Fun -",
+		"- Image -",
 		"- Media -",
 		"- Minecraft -",
 		"- Moderation -",
@@ -28,6 +29,13 @@
 		"music": [
 			"leave               [n/a]",
 			"play                [song]"
+		],
+		"image": [
+			"These commands take many image inputs. Where it says `url`, this can be a url, member ping, uploaded image, or leave it blank to target an image in a previous message.
+			"",
+			"magnify             [url]",
+			"palette             [url]",
+			"squarify            [squaresize][gapsize][url]"
 		],
 		"wordfilter": [
 			"addbannedword       [severity][word]",
@@ -626,6 +634,24 @@
 			"Description": "Translate a message into another language.\nTranslates to English if no language is specified.\nList all languages with `e!translate`",
 			"Formatting": "translate [language][message]",
 			"Aliases": "[translate]",
+			"Permissions": "@everyone"
+		},
+		"squarify": {
+			"Description": "Squarifies images. The first number is the square size, the second is the size of the gap between them which is removed",
+			"Formatting": "squarify [squaresize][gapsize][url]",
+			"Aliases": "[squarify][square]",
+			"Permissions": "@everyone"
+		},
+		"magnify": {
+			"Description": "Enlarges an image",
+			"Formatting": "magnify [url]",
+			"Aliases": "[magnify][resize]",
+			"Permissions": "@everyone"
+		},
+		"palette": {
+			"Description": "Show the palette of an image",
+			"Formatting": "palette [url]",
+			"Aliases": "[palette]",
 			"Permissions": "@everyone"
 		}
 	}
