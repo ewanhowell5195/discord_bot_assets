@@ -31,7 +31,7 @@
 			"play                [song]"
 		],
 		"image": [
-			"These commands take many image inputs. Where it says `url`, this can be a url, member ping, uploaded image, or leave it blank to target an image in a previous message.
+			"These commands take many image inputs. Where it says `url`, this can be a url, member ping, uploaded image, or leave it blank to target an image in a previous message.",
 			"",
 			"magnify             [url]",
 			"palette             [url]",
