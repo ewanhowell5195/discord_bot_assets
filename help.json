@@ -566,7 +566,7 @@
 			"Description": "Text to speech some text",
 			"Cool Down": "5",
 			"Formatting": "tts [text]",
-			"Aliases": "[tts] [text] [speech] [texttospeech] [textspeech]",
+			"Aliases": "[tts] [speech] [texttospeech] [textspeech]",
 			"Permissions": "@everyone"
 		},
 		"lyrics": {
@@ -639,7 +639,7 @@
 		"squarify": {
 			"Description": "Squarifies images. The first number is the square size, the second is the size of the gap between them which is removed",
 			"Formatting": "squarify [squaresize][gapsize][url]",
-			"Aliases": "[squarify][square]",
+			"Aliases": "[squarify]",
 			"Permissions": "@everyone"
 		},
 		"magnify": {
