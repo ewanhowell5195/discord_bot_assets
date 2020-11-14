@@ -126,7 +126,9 @@
 			"lyrics              [artist; song]",
 			"mock                [text]",
 			"namesearch          [text]",
+			"quote               [n/a],
 			"say                 [character][message]",
+			"textquote           [n/a]",
 			"tts                 [text]"
 		],
 		"other": [
@@ -223,7 +225,7 @@
 		"endbot": {
 			"Description": "Makes the bot log off",
 			"Formatting": "endbot",
-			"Aliases": "[endbot] [end]",
+			"Aliases": "[endbot] [end] [logout] [quit]",
 			"Permissions": "<@519179484340027392>"
 		},
 		"flip": {
@@ -652,6 +654,18 @@
 			"Description": "Show the palette of an image",
 			"Formatting": "palette [url]",
 			"Aliases": "[palette]",
+			"Permissions": "@everyone"
+		},
+		"quote": {
+			"Description": "Generate an \"inspirational\" image quote",
+			"Formatting": "quote",
+			"Aliases": "[quote] [inspire]",
+			"Permissions": "@everyone"
+		},
+		"textquote": {
+			"Description": "Generate an \"inspirational\" quote",
+			"Formatting": "textquote",
+			"Aliases": "[textquote] [textinspire]",
 			"Permissions": "@everyone"
 		}
 	}
