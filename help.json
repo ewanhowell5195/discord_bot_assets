@@ -725,7 +725,7 @@
 			"Permissions": "@everyone"
 		},
 		"text": {
-			"Description": "Write text over an image.\nThe-text-must-use-dashes-instead-of-spaces.\nuse the command \"text fonts\" to show a list of avaliable fonts",
+			"Description": "Write text over an image.\nThe-text-must-use-dashes-instead-of-spaces.\nUse the command \"text fonts\" to show a list of fonts",
 			"Formatting": "text [text][x][y][size][colour][font][url]",
 			"Aliases": "[text]",
 			"Permissions": "@everyone"
