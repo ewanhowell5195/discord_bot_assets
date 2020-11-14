@@ -29,27 +29,6 @@
 			"leave               [n/a]",
 			"play                [song]"
 		],
-		"images": [
-			"These commands take many image inputs. Where it says [url], this can be a url, member ping, uploaded image, or leave it blank to target an image in a previous message.",
-			"",
-			"- Subcategories -",
-			"Drawing",
-			"",
-			"- Commands -",
-			"magnify             [url]",
-			"palette             [url]",
-			"squarify            [squaresize][gapsize][url]"
-		],
-		"drawing": [
-			"ellipse             [x][y][x2][y2][colour][url]",
-			"fill                [x][y][colour][tolerance][url]",
-			"image               [width][height][colour]",
-			"line                [x][y][x2][y2][colour][url]",
-			"pixel               [x][y][colour][url]",
-			"polygon             [x][y][radius][sides][colour][url]",
-			"rectangle           [x][y][x2][y2][colour][url]",
-			"text                [text][x][y][size][colour][font][url]"
-		],
 		"wordfilter": [
 			"addbannedword       [severity][word]",
 			"listbannedwords     [n/a]",
@@ -159,6 +138,29 @@
 			"tv                  [name]",
 			"tvart               [name]",
 			"youtube             [name]"
+		],
+		"images": [
+			"These commands take many image inputs. Where it says [url], this can be a url, member ping, uploaded image, or leave it blank to target an image in a previous message.",
+			"",
+			"- Subcategories -",
+			"Drawing",
+			"",
+			"- Commands -",
+			"magnify             [url]",
+			"palette             [url]",
+			"squarify            [squaresize][gapsize][url]"
+		],
+		"drawing": [
+			"For the [colour] element, you can use [r][g][b], [#hexcode], or [colourname]",
+			"",
+			"ellipse             [x][y][x2][y2][colour][url]",
+			"fill                [x][y][colour][tolerance][url]",
+			"image               [width][height][colour]",
+			"line                [x][y][x2][y2][colour][url]",
+			"pixel               [x][y][colour][url]",
+			"polygon             [x][y][radius][sides][colour][url]",
+			"rectangle           [x][y][x2][y2][colour][url]",
+			"text                [text][x][y][size][colour][font][url]"
 		]
 	},
 	"commands": {
