@@ -2,7 +2,7 @@
 	"help": [
 		"- Bot -",
 		"- Fun -",
-		"- Image -",
+		"- Images -",
 		"- Media -",
 		"- Minecraft -",
 		"- Moderation -",
@@ -21,7 +21,6 @@
 			"Wordfilter",
 			"",
 			"- Commands -",
-			"",
 			"ban                 <member>[reason]",
 			"kick                <member>[reason]",
 			"purge               [amount]"
@@ -30,12 +29,26 @@
 			"leave               [n/a]",
 			"play                [song]"
 		],
-		"image": [
+		"images": [
 			"These commands take many image inputs. Where it says [url], this can be a url, member ping, uploaded image, or leave it blank to target an image in a previous message.",
 			"",
+			"- Subcategories -",
+			"Drawing",
+			"",
+			"- Commands -",
 			"magnify             [url]",
 			"palette             [url]",
 			"squarify            [squaresize][gapsize][url]"
+		],
+		"drawing": [
+			"ellipse             [x][y][x2][y2][colour][url]",
+			"fill                [x][y][colour][tolerance][url]",
+			"image               [width][height][colour]",
+			"line                [x][y][x2][y2][colour][url]",
+			"pixel               [x][y][colour][url]",
+			"polygon             [x][y][radius][sides][colour][url]",
+			"rectangle           [x][y][x2][y2][colour][url]",
+			"text                [text][x][y][size][colour][font][url]"
 		],
 		"wordfilter": [
 			"addbannedword       [severity][word]",
@@ -70,7 +83,6 @@
 			"Joinroles",
 			"",
 			"- Commands -",
-			"",
 			"commandcount        [n/a]",
 			"customembed         [colour]",
 			"help                [command]",
@@ -666,6 +678,54 @@
 			"Description": "Generate an \"inspirational\" quote",
 			"Formatting": "textquote",
 			"Aliases": "[textquote] [textinspire]",
+			"Permissions": "@everyone"
+		},
+		"ellipse": {
+			"Description": "Draw an ellipse on an image.\n[x][y] is top left corner, [x2][y2] is bottom right corner",
+			"Formatting": "ellipse [x][y][x2][y2][colour][url]",
+			"Aliases": "[ellipse]",
+			"Permissions": "@everyone"
+		},
+		"fill": {
+			"Description": "Fill a closed on an image with colour",
+			"Formatting": "fill [x][y][colour][tolerance][url]",
+			"Aliases": "[fill] [flood]",
+			"Permissions": "@everyone"
+		},
+		"image": {
+			"Description": "Generate a new blank image",
+			"Formatting": "image [width][height][colour]",
+			"Aliases": "[image]",
+			"Permissions": "@everyone"
+		},
+		"line": {
+			"Description": "Draw a line across an image.\n[x][y] is top left corner, [x2][y2] is bottom right corner",
+			"Formatting": "line [x][y][x2][y2][colour][url]",
+			"Aliases": "[line]",
+			"Permissions": "@everyone"
+		},
+		"pixel": {
+			"Description": "Add a single pixel to an image",
+			"Formatting": "pixel [x][y][colour][url]",
+			"Aliases": "[pixel]",
+			"Permissions": "@everyone"
+		},
+		"polygon": {
+			"Description": "Draw a polygon over an image.\n[x][y] is the centre of the polygon",
+			"Formatting": "polygon [x][y][radius][sides][colour][url]",
+			"Aliases": "[polygon] [poly]",
+			"Permissions": "@everyone"
+		},
+		"rectangle": {
+			"Description": "Draw a rectangle over an image.\n[x][y] is top left corner, [x2][y2] is bottom right corner",
+			"Formatting": "rectangle [x][y][x2][y2][colour][url]",
+			"Aliases": "[rectangle] [rect] [square]",
+			"Permissions": "@everyone"
+		},
+		"text": {
+			"Description": "Write text over an image.\nThe-text-must-use-dashes-instead-of-spaces.\nuse the command \"text fonts\" to show a list of avaliable fonts",
+			"Formatting": "text [text][x][y][size][colour][font][url]",
+			"Aliases": "[text]",
 			"Permissions": "@everyone"
 		}
 	}
