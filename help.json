@@ -126,7 +126,7 @@
 			"lyrics              [artist; song]",
 			"mock                [text]",
 			"namesearch          [text]",
-			"quote               [n/a],
+			"quote               [n/a]",
 			"say                 [character][message]",
 			"textquote           [n/a]",
 			"tts                 [text]"
