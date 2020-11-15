@@ -729,6 +729,12 @@
 			"Formatting": "text [text][x][y][size][colour][font][url]",
 			"Aliases": "[text]",
 			"Permissions": "@everyone"
+		},
+		"embed": {
+			"Description": "Send a custom embed using the bot.\nAll parameters must be seperated with \"; \"\nPut \"none\" if you don't want something",
+			"Formatting": "embed [title][description][thumbnail][image]",
+			"Aliases": "[embed]",
+			"Permissions": "@everyone"
 		}
 	}
 }
