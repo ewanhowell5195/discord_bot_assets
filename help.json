@@ -125,6 +125,7 @@
 		"other": [
 			"artchive            [description]",
 			"bottime             [n/a]",
+			"embed               [title][description][thumbnailURL][imageURL]",
 			"emoji               [emoji]",
 			"imgur               [imageURL]",
 			"mock                [text]",
@@ -731,8 +732,8 @@
 			"Permissions": "@everyone"
 		},
 		"embed": {
-			"Description": "Send a custom embed using the bot.\nAll parameters must be seperated with \"; \"\nPut \"none\" if you don't want something",
-			"Formatting": "embed [title][description][thumbnail][image]",
+			"Description": "Send a custom embed using the bot.\nAll parameters must be seperated with \"; \".\nPut \"none\" if you don't want something",
+			"Formatting": "embed [title][description][thumbnailURL][imageURL]",
 			"Aliases": "[embed]",
 			"Permissions": "@everyone"
 		}
