@@ -105,6 +105,7 @@ hoglin                 |unsupported
 hopper_minecart        |unsupported
 llama_carpet           |unsupported
 llama_spit             |unsupported
+painting               |unsupported
 player                 |unsupported
 player_thin            |unsupported
 shield                 |unsupported
