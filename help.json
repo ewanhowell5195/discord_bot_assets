@@ -30,7 +30,7 @@
 			"play                [song]"
 		],
 		"wordfilter": [
-			"addbannedword       [severity][word]",
+			"addbannedword       [word][severity]",
 			"listbannedwords     [n/a]",
 			"removebannedword    [word]"
 		],
@@ -179,8 +179,8 @@
 		},
 		"addbannedword": {
 			"Description": "Add a banned word. If severity is left blank, it defaults to 1. Words with other characters instead of letters (such as 'h3110') are automatically handled\n\nSeverity 1 - Deletes the message\nSeverity 2 - Deletes message and warns sender\nSeverity 3 - Deletes message, warns and mutes sender",
-			"Formatting": "addbannedword [severity][word]",
-			"Aliases": "[addbannedword]",
+			"Formatting": "addbannedword [word][severity]",
+			"Aliases": "[addbannedword] [setbannedword]",
 			"Permissions": "Administrator"
 		},
 		"addrole": {
