@@ -406,7 +406,7 @@
 			"Permissions": "@everyone"
 		},
 		"setaccount": {
-			"Description": "Tie a minecraft account tied to your discord",
+			"Description": "Tie a minecraft account to your discord, so you can run the Minecraft commands without specifying a user",
 			"Formatting": "setaccount [name]",
 			"Aliases": "[setaccount]",
 			"Permissions": "@everyone"
