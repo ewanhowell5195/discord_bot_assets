@@ -69,6 +69,7 @@
 			"invite              [n/a]",
 			"membercount         [n/a]",
 			"ping                [n/a]",
+			"prefix              [prefix]", 
 			"setmembercounter    [channelID][customText]",
 			"support             [message]",
 			"uptime              [n/a]"
@@ -125,6 +126,7 @@
 		"other": [
 			"artchive            [description]",
 			"bottime             [n/a]",
+			"define              [word]"
 			"embed               [title][description][thumbnailURL][imageURL]",
 			"emoji               [emoji]",
 			"imgur               [imageURL]",
@@ -736,6 +738,18 @@
 			"Formatting": "embed [title][description][thumbnailURL][imageURL]",
 			"Aliases": "[embed]",
 			"Permissions": "@everyone"
+		},
+		"define": {
+			"Description": "Shows the descriptions of a word",
+			"Formatting": "define [word]",
+			"Aliases": "[define]",
+			"Permissions": "@everyone"
+		},
+		"prefix": {
+			"Description": "Change the prefix of the bot on your server",
+			"Formatting": "prefix [prefix]",
+			"Aliases": "[prefix]",
+			"Permissions": "Administrator"
 		}
 	}
 }
