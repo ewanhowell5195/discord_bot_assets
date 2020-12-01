@@ -132,6 +132,7 @@
 			"emoji               [emoji]",
 			"imgur               [imageURL]",
 			"mock                [text]",
+			"remindme            [duration][reminder]",
 			"serverinfo          [n/a]",
 			"translate           [language][message]"
 		],
@@ -756,6 +757,12 @@
 			"Description": "Put some members into a band! Multiple members optional",
 			"Formatting": "band <member><member><member><member>",
 			"Aliases": "[band]",
+			"Permissions": "@everyone"
+		},
+		"remindme": {
+			"Description": "Set a reminder for yourself",
+			"Formatting": "remindme [duration][reminder]",
+			"Aliases": "[remindme] [remind] [reminder]",
 			"Permissions": "@everyone"
 		}
 	}
