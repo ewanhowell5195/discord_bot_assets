@@ -127,7 +127,7 @@
 		"other": [
 			"artchive            [description]",
 			"bottime             [n/a]",
-			"define              [word]"
+			"define              [word]",
 			"embed               [title][description][thumbnailURL][imageURL]",
 			"emoji               [emoji]",
 			"imgur               [imageURL]",
