@@ -110,6 +110,7 @@
 		],
 		"fun": [
 			"8ball               [question]",
+			"band                <member><member><member><member>"
 			"bean                <member>",
 			"beanrequest         [n/a]",
 			"flip                [n/a]",
@@ -750,6 +751,12 @@
 			"Formatting": "prefix [prefix]",
 			"Aliases": "[prefix]",
 			"Permissions": "Administrator"
+		},
+		"band": {
+			"Description": "Put some members into a band! Multiple members optional",
+			"Formatting": "band <member><member><member><member>",
+			"Aliases": "[band]",
+			"Permissions": "@everyone"
 		}
 	}
 }
