@@ -118,6 +118,7 @@
 			"love                [name] [name]",
 			"lyrics              [artist; song]",
 			"mock                [text]",
+			"monketest           <member>",
 			"namesearch          [text]",
 			"quote               [n/a]",
 			"say                 [character][message]",
@@ -284,7 +285,7 @@
 			"Permissions": "@everyone"
 		},
 		"joinposition": {
-			"Description": "View what position a user joined the server in",
+			"Description": "View what position a user joined the server in.\nYou can also find what member is in a position by entering the number instead of a member",
 			"Formatting": "joinposition <member>",
 			"Aliases": "[joinposition] [join]",
 			"Permissions": "@everyone"
@@ -764,6 +765,18 @@
 			"Formatting": "remindme [duration][reminder]",
 			"Aliases": "[remindme] [remind] [reminder]",
 			"Permissions": "@everyone"
+		},
+		"monketest": {
+			"Description": "Test how much of a monke someone is!",
+			"Formatting": "monketest <member>",
+			"Aliases": "[monketest] [monke] [monkey] [monkeytest]",
+			"Permissions": "@everyone"
+		},
+		"lock": {
+			"Description": "Toggle on and off everyone's ability to send messages in a channel",
+			"Formatting": "lock <channel>",
+			"Aliases": "[lock]",
+			"Permissions": "Ban Members"
 		}
 	}
 }
