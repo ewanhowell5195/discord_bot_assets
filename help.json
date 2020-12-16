@@ -479,7 +479,7 @@
 		"warnclear": {
 			"Description": "Clear warns from a user",
 			"Formatting": "warnclear <member> [number]",
-			"Aliases": "[warnclear] [clearwarn]",
+			"Aliases": "[warnclear] [clearwarn] [removewarn] [warnremove]",
 			"Permissions": "Administrator"
 		},
 		"warncount": {
@@ -521,7 +521,7 @@
 		"muteclear": {
 			"Description": "Clear a mute from a member",
 			"Formatting": "muteclear <member>[slotnumber]",
-			"Aliases": "[muteclear] [clearmute]",
+			"Aliases": "[muteclear] [clearmute] [removemute] [muteremove]",
 			"Permissions": "Ban Members"
 		},
 		"unmute": {
@@ -647,7 +647,7 @@
 			"Permissions": "@everyone"
 		},
 		"setmembercounter": {
-			"Description": "Set a channel to use to display the current member count.\nA `!` must be used in the custom text to indicate the number, for example: `e!setmembercount channelID Current Members: !`",
+			"Description": "Set a channel to use to display the current member count.\nA `!` must be used in the custom text to indicate the number, for example: `e!setmembercount [channelID] Current Members: !`",
 			"Formatting": "setmembercounter [channelID][customText]",
 			"Aliases": "[setmembercounter] [smc] [membercounter]",
 			"Permissions": "Administrator"
@@ -775,7 +775,7 @@
 		"lock": {
 			"Description": "Toggle on and off everyone's ability to send messages in a channel",
 			"Formatting": "lock <channel>",
-			"Aliases": "[lock]",
+			"Aliases": "[lock] [unlock]",
 			"Permissions": "Ban Members"
 		}
 	}
