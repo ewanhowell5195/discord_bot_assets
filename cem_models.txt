@@ -94,6 +94,7 @@ zombified_piglin       |head, headwear, body, left_arm, right_arm, left_leg, rig
 -----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 armor                  |unsupported
 arrow                  |unsupported
+axolotl                |unsupported
 bee                    |unsupported
 bell                   |unsupported
 chest_minecart         |unsupported
@@ -101,6 +102,7 @@ command_block_minecart |unsupported
 elder_guardian         |unsupported
 elytra                 |unsupported
 furnace_minecart       |unsupported
+goat                   |unsupported
 hoglin                 |unsupported
 hopper_minecart        |unsupported
 llama_carpet           |unsupported
@@ -115,7 +117,5 @@ trader_llama           |unsupported
 trident                |unsupported
 wandering_trader       |unsupported
 zoglin                 |unsupported
-axolotl                |unreleased
 glow squid             |unreleased
-goat                   |unreleased
 warden                 |unreleased
