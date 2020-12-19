@@ -6,777 +6,680 @@
 		"- Media -",
 		"- Minecraft -",
 		"- Moderation -",
-		"- Music -",
 		"- Number -",
 		"- Other -",
 		"- Server -",
-		"- User -"
+		"- User -",
+		"- VC -"
 	],
 	"categories": {
-		"moderation": [
-			"- Subcategories -",
-			"Mutes",
-			"Roles",
-			"Warns",
-			"Wordfilter",
-			"",
-			"- Commands -",
-			"ban                 <member>[reason]",
-			"kick                <member>[reason]",
-			"purge               [amount]"
-		],
-		"music": [
-			"leave               [n/a]",
-			"play                [song]"
-		],
-		"wordfilter": [
-			"addbannedword       [word][severity]",
-			"listbannedwords     [n/a]",
-			"removebannedword    [word]"
-		],
-		"roles": [
-			"addrole             <member>[role]",
-			"removerole          <member>[role]"
-		],
-		"mutes": [
-			"mute                <member>[time][value][reason]",
-			"muteclear           <member>[slotnumber]",
-			"mutecount           <member>",
-			"mutelist            <member>",
-			"unmute              <member>"
-		],
-		"warns": [
-			"warn                <member>[reason]",
-			"warnclear           <member>[number]",
-			"warncount           <member>",
-			"warnlist            <member>"
-		],
-		"server": [
-			"setartchive         <channel>",
-			"setlogs             <channel>",
-			"setnotices          <channel>"
-		],
-		"bot": [
-			"- Subcategories -",
-			"Restricted",
-			"Joinroles",
-			"",
-			"- Commands -",
-			"commandcount        [n/a]",
-			"customembed         [colour]",
-			"help                [command]",
-			"info                [n/a]",
-			"invite              [n/a]",
-			"membercount         [n/a]",
-			"ping                [n/a]",
-			"prefix              [prefix]", 
-			"setmembercounter    [channelID][customText]",
-			"support             [message]",
-			"uptime              [n/a]"
-		],
-		"joinroles": [
-			"listjoinroles       [n/a]",
-			"removejoinrole      [role]",
-			"setjoinrole         [role]"
-		],
-		"restricted": [
-			"dm                  [memberID][message]",
-			"endbot              [n/a]",
-			"notice              [message]",
-			"reply               [channelID][memberID][reply]"
-		],
-		"user": [
-			"avatar              <member>",
-			"id                  <member>",
-			"joinposition        <member>",
-			"nickname            [nickname]",
-			"resetjoin           [n/a]",
-			"setjoin             <member>[position]",
-			"setnickname         <member>[nickname]",
-			"userinfo            <member>"
-		],
-		"minecraft": [
-			"account             <member>",
-			"cape                [name]",
-			"head                [name]",
-			"mobparts            [entity]",
-			"setaccount          [name]",
-			"skin                [name]"
-		],
-		"number": [
-			"dice                [number]",
-			"math                [number][process][number]",
-			"randomnumber        [number][number]"
-		],
-		"fun": [
-			"8ball               [question]",
-			"band                <member><member><member><member>",
-			"bean                <member>",
-			"beanrequest         [n/a]",
-			"flip                [n/a]",
-			"kill                <member>[weapon]",
-			"love                [name] [name]",
-			"lyrics              [artist; song]",
-			"mock                [text]",
-			"monketest           <member>",
-			"namesearch          [text]",
-			"quote               [n/a]",
-			"say                 [character][message]",
-			"textquote           [n/a]",
-			"tts                 [text]"
-		],
-		"other": [
-			"artchive            [description]",
-			"bottime             [n/a]",
-			"define              [word]",
-			"embed               [title][description][thumbnailURL][imageURL]",
-			"emoji               [emoji]",
-			"imgur               [imageURL]",
-			"mock                [text]",
-			"remindme            [duration][reminder]",
-			"serverinfo          [n/a]",
-			"translate           [language][message]"
-		],
-		"media": [
-			"movie               [name]",
-			"movieart            [name]",
-			"thumbnail           [name]",
-			"tv                  [name]",
-			"tvart               [name]",
-			"youtube             [name]"
-		],
-		"images": [
-			"These commands take many image inputs. Where it says [url], this can be a url, member ping, uploaded image, or leave it blank to target an image in a previous message.",
-			"",
-			"- Subcategories -",
-			"Drawing",
-			"",
-			"- Commands -",
-			"magnify             [url]",
-			"palette             [url]",
-			"squarify            [squaresize][gapsize][url]"
-		],
-		"drawing": [
-			"For the [colour] element, you can use [r][g][b], [#hexcode], or [colourname]",
-			"",
-			"ellipse             [x][y][x2][y2][colour][url]",
-			"fill                [x][y][colour][tolerance][url]",
-			"image               [width][height][colour]",
-			"line                [x][y][x2][y2][colour][url]",
-			"pixel               [x][y][colour][url]",
-			"polygon             [x][y][radius][sides][colour][url]",
-			"rectangle           [x][y][x2][y2][colour][url]",
-			"text                [text][x][y][size][colour][font][url]"
-		]
+		"moderation": {
+			"subcategories": [
+				"Mutes",
+				"Roles",
+				"Warns",
+				"Wordfilter"
+			],
+			"commands": [
+				"ban                 <member>[reason]",
+				"kick                <member>[reason]",
+				"purge               [amount]",
+				"unban               [userID]"
+			]
+		},
+		"vc": {
+			"commands": [
+				"leave               [n/a]",
+				"play                [song]",
+				"tts                 [language][text]"
+			]
+		},
+		"wordfilter": {
+			"commands": [
+				"addbannedword       [word][severity]",
+				"listbannedwords     [n/a]",
+				"removebannedword    [word]"
+			]
+		},
+		"roles": {
+			"commands": [
+				"addrole             <member>[role]",
+				"removerole          <member>[role]"
+			]
+		},
+		"mutes": {
+			"commands": [
+				"mute                <member>[time][value][reason]",
+				"muteclear           <member>[slotnumber]",
+				"mutecount           <member>",
+				"mutelist            <member>",
+				"unmute              <member>"
+			]
+		},
+		"warns": {
+			"commands": [
+				"warn                <member>[reason]",
+				"warnclear           <member>[number]",
+				"warncount           <member>",
+				"warnlist            <member>"
+			]
+		},
+		"server": {
+				"commands": [
+				"disablenotices      [n/a]",
+				"lock                <channel>",
+				"setartchive         <channel>",
+				"setlogs             <channel>",
+				"setnotices          <channel>"
+			]
+		},
+		"bot": {
+			"subcategories": [
+				"Restricted",
+				"Joinroles"
+			],
+			"commands": [
+				"alias               [command]",
+				"commandcount        [n/a]",
+				"customembed         [colour]",
+				"disable             [command]",
+				"disabled            [n/a]",
+				"help                [command]",
+				"info                [n/a]",
+				"invite              [n/a]",
+				"membercount         [n/a]",
+				"ping                [n/a]",
+				"prefix              [prefix]", 
+				"setmembercounter    [channelID][customText]",
+				"support             [message]",
+				"uptime              [n/a]"
+			]
+		},
+		"joinroles": {
+			"commands": [
+				"listjoinroles       [n/a]",
+				"removejoinrole      [role]",
+				"setjoinrole         [role]"
+			]
+		},
+		"restricted": {
+			"commands": [
+				"dm                  [memberID][message]",
+				"endbot              [n/a]",
+				"notice              [message]",
+				"reply               [channelID][memberID][reply]"
+			]
+		},
+		"user": {
+			"commands": [
+				"avatar              <member>",
+				"id                  <member>",
+				"joinposition        <member>",
+				"nickname            [nickname]",
+				"resetjoin           [n/a]",
+				"setjoin             <member>[position]",
+				"setnickname         <member>[nickname]",
+				"userinfo            <member>"
+			]
+		},
+		"minecraft": {
+			"commands": [
+				"account             <member>",
+				"cape                [name]",
+				"head                [name]",
+				"mobparts            [entity]",
+				"setaccount          [name]",
+				"skin                [name]"
+			]
+		},
+		"number": {
+			"commands": [
+				"dice                [number]",
+				"math                [number][process][number]",
+				"randomnumber        [number][number]"
+			]
+		},
+		"fun": {
+			"commands": [
+				"8ball               [question]",
+				"band                <member><member><member><member>",
+				"bean                <member>",
+				"beanrequest         [n/a]",
+				"charshift           [offset][text]",
+				"flip                [n/a]",
+				"kill                <member>[weapon]",
+				"leet                [text]",
+				"love                [name] [name]",
+				"lyrics              [artist; song]",
+				"mock                [text]",
+				"monketest           <member>",
+				"namesearch          [text]",
+				"quote               [n/a]",
+				"say                 [character][message]",
+				"textquote           [n/a]"
+			]
+		},
+		"other": {
+			"commands": [
+				"artchive            [description]",
+				"bottime             [n/a]",
+				"define              [word]",
+				"embed               [title][description][thumbnailURL][imageURL]",
+				"emoji               [emoji]",
+				"imgur               [imageURL]",
+				"mock                [text]",
+				"remindme            [duration][reminder]",
+				"serverinfo          [n/a]",
+				"translate           [language][message]"
+			]
+		},
+		"media": {
+			"commands": [
+				"movie               [name]",
+				"movieart            [name]",
+				"thumbnail           [name]",
+				"tv                  [name]",
+				"tvart               [name]",
+				"youtube             [name]"
+			]
+		},
+		"images": {
+			"description": "These commands take many image inputs. Where it says [url], this can be a url, member ping, uploaded image, or leave it blank to target an image in a previous message.",
+			"subcategories": [
+				"Drawing"
+			],
+			"commands": [
+				"magnify             [url]",
+				"palette             [url]",
+				"squarify            [squaresize][gapsize][url]"
+			]
+		},
+		"drawing": {
+			"description": "For the [colour] element, you can use [r][g][b], [#hexcode], or [colourname]",
+			"commands": [
+				"ellipse             [x][y][x2][y2][colour][url]",
+				"fill                [x][y][colour][tolerance][url]",
+				"image               [width][height][colour]",
+				"line                [x][y][x2][y2][colour][url]",
+				"pixel               [x][y][colour][url]",
+				"polygon             [x][y][radius][sides][colour][url]",
+				"rectangle           [x][y][x2][y2][colour][url]",
+				"text                [text][x][y][size][colour][font][url]"
+			]
+		}
 	},
 	"commands": {
 		"8ball": {
-			"Description": "Ask the magic eight-ball a question",
-			"Formatting": "8ball [question]",
-			"Aliases": "[8ball] [8b] [ball]",
-			"Permissions": "@everyone"
+			"description": "Ask the magic eight-ball a question",
+			"formatting": "8ball [question]"
 		},
 		"account": {
-			"Description": "View the minecraft account tied to someones discord",
-			"Formatting": "account <member>",
-			"Aliases": "[account]",
-			"Permissions": "@everyone"
+			"description": "View the minecraft account tied to someones discord",
+			"formatting": "account <member>"
 		},
 		"addbannedword": {
-			"Description": "Add a banned word. If severity is left blank, it defaults to 1. Words with other characters instead of letters (such as 'h3110') are automatically handled\n\nSeverity 1 - Deletes the message\nSeverity 2 - Deletes message and warns sender\nSeverity 3 - Deletes message, warns and mutes sender",
-			"Formatting": "addbannedword [word][severity]",
-			"Aliases": "[addbannedword] [setbannedword]",
-			"Permissions": "Administrator"
+			"description": "Add a banned word. If severity is left blank, it defaults to 1. Words with other characters instead of letters (such as 'h3110') are automatically handled\n\nSeverity 1 - Deletes the message\nSeverity 2 - Deletes message and warns sender\nSeverity 3 - Deletes message, warns and mutes sender",
+			"formatting": "addbannedword [word][severity]",
+			"permissions": "Administrator"
 		},
 		"addrole": {
-			"Description": "Add a role to a mentioned user",
-			"Formatting": "addrole <member> [role]",
-			"Aliases": "[addrole]",
-			"Permissions": "Administrator"
+			"description": "Add a role to a mentioned user",
+			"formatting": "addrole <member> [role]",
+			"permissions": "Administrator"
 		},
 		"artchive": {
-			"Description": "Add your artwork to the artchive!",
-			"Formatting": "artchive [description]",
-			"Aliases": "[artchive] [art] [archive] [a]",
-			"Permissions": "@everyone"
+			"description": "Add your artwork to the artchive!",
+			"formatting": "artchive [description]"
 		},
 		"avatar": {
-			"Description": "Shows a users avatar",
-			"Formatting": "avatar <member>",
-			"Aliases": "[avatar] [av] [pfp] [profilepic]",
-			"Permissions": "@everyone"
+			"description": "Shows a users avatar",
+			"formatting": "avatar <member>"
 		},
 		"ban": {
-			"Description": "Ban a user from the server",
-			"Formatting": "ban [member] [reason]",
-			"Aliases": "[ban]",
-			"Permissions": "Ban Members"
+			"description": "Ban a user from the server",
+			"formatting": "ban <member> [reason]",
+			"permissions": "Ban Members"
 		},
 		"bean": {
-			"Description": "Bean a user",
-			"Formatting": "bean <member>",
-			"Aliases": "[bean]",
-			"Permissions": "Ban Members"
+			"description": "Bean a user",
+			"formatting": "bean <member>",
+			"permissions": "Ban Members"
 		},
 		"beanrequest": {
-			"Description": "Request to be beaned",
-			"Formatting": "beanrequest",
-			"Aliases": "[beanrequest]",
-			"Permissions": "@everyone"
+			"description": "Request to be beaned",
+			"formatting": "beanrequest"
 		},
 		"bottime": {
-			"Description": "See what the current time is for Ewan",
-			"Formatting": "bottime",
-			"Aliases": "[bottime] [btime]",
-			"Permissions": "@everyone"
+			"description": "See what the current time is for Ewan",
+			"formatting": "bottime"
 		},
 		"cape": {
-			"Description": "Get a Minecraft Java users OptiFine cape",
-			"Formatting": "skin [name]",
-			"Aliases": "[skin]",
-			"Permissions": "@everyone"
+			"description": "Get a Minecraft Java users OptiFine cape",
+			"formatting": "skin [name]"
 		},
 		"dice": {
-			"Description": "Throw between 1 and 3 dice",
-			"Formatting": "dice [amount]",
-			"Aliases": "[dice]",
-			"Permissions": "@everyone"
+			"description": "Throw between 1 and 3 dice",
+			"formatting": "dice [amount]"
 		},
 		"endbot": {
-			"Description": "Makes the bot log off",
-			"Formatting": "endbot",
-			"Aliases": "[endbot] [end] [logout] [quit]",
-			"Permissions": "<@519179484340027392>"
+			"description": "Makes the bot log off",
+			"formatting": "endbot",
+			"permissions": "<@519179484340027392>"
 		},
 		"flip": {
-			"Description": "Flips a coin",
-			"Formatting": "flip",
-			"Aliases": "[flip] [coin]",
-			"Permissions": "@everyone"
+			"description": "Flips a coin",
+			"formatting": "flip"
 		},
 		"head": {
-			"Description": "Get a Minecraft Java users Minecraft head",
-			"Formatting": "skin [name]",
-			"Aliases": "[skin]",
-			"Permissions": "@everyone"
+			"description": "Get a Minecraft Java users Minecraft head",
+			"formatting": "skin [name]"
 		},
 		"help": {
-			"Description": "Get a list of the bots commands and info about each one",
-			"Formatting": "help [command]",
-			"Aliases": "[help] [h]",
-			"Permissions": "@everyone"
+			"description": "Get a list of the bots commands and info about each one",
+			"formatting": "help [command]"
 		},
 		"id": {
-			"Description": "Shows a users ID",
-			"Formatting": "id <member>",
-			"Aliases": "[id]",
-			"Permissions": "@everyone"
+			"description": "Shows a users ID",
+			"formatting": "id <member>"
 		},
 		"imgur": {
-			"Description": "Upload an attatched image to Imgur",
-			"Formatting": "imgur [imageURL]",
-			"Aliases": "[imgur] [img] [upload]",
-			"Permissions": "@everyone"
+			"description": "Upload an attatched image to Imgur",
+			"formatting": "imgur [imageURL]"
 		},
 		"info": {
-			"Description": "Get info about the bot",
-			"Formatting": "info",
-			"Aliases": "[info]",
-			"Permissions": "@everyone"
+			"description": "Get info about the bot",
+			"formatting": "info"
 		},
 		"joinposition": {
-			"Description": "View what position a user joined the server in.\nYou can also find what member is in a position by entering the number instead of a member",
-			"Formatting": "joinposition <member>",
-			"Aliases": "[joinposition] [join]",
-			"Permissions": "@everyone"
+			"description": "View what position a user joined the server in.\nYou can also find what member is in a position by entering the number instead of a member",
+			"formatting": "joinposition <member>"
 		},
 		"kick": {
-			"Description": "Kick a user from the server",
-			"Formatting": "kick [member] [reason]",
-			"Aliases": "[kick]",
-			"Permissions": "Ban Members"
+			"description": "Kick a user from the server",
+			"formatting": "kick <member> [reason]",
+			"permissions": "Ban Members"
 		},
 		"kill": {
-			"Description": "Kill a user with a Minecraft death message. <member> and [weapon] are optional",
-			"Formatting": "kill <member> [weapon]",
-			"Aliases": "[kill]",
-			"Permissions": "@everyone"
+			"description": "Kill a user with a Minecraft death message. <member> and [weapon] are optional",
+			"formatting": "kill <member> [weapon]"
 		},
 		"listbannedwords": {
-			"Description": "List all banned words",
-			"Formatting": "listbannedwords",
-			"Aliases": "[listbannedwords]",
-			"Permissions": "Ban Members"
+			"description": "List all banned words",
+			"formatting": "listbannedwords",
+			"permissions": "Ban Members"
 		},
 		"love": {
-			"Description": "Discover how much you love someone!",
-			"Formatting": "love [name] [name]",
-			"Aliases": "[love] [luv] [lv]",
-			"Permissions": "@everyone"
+			"description": "Discover how much you love someone!",
+			"formatting": "love [name] [name]"
 		},
 		"math": {
-			"Description": "Calculate simple math equations",
-			"Formatting": "math [number] [process] [number]",
-			"Aliases": "[math] [maths] [calc] [calcultor]",
-			"Permissions": "@everyone"
+			"description": "Calculate simple math equations",
+			"formatting": "math [number] [process] [number]"
 		},
 		"mock": {
-			"Description": "Spongebobify some text",
-			"Formatting": "mock [text]",
-			"Aliases": "[mock] [sarcasm] [spongebob] [sponge]",
-			"Permissions": "@everyone"
+			"description": "Spongebobify some text",
+			"formatting": "mock [text]"
 		},
 		"movie": {
-			"Description": "View the rating and overview about a movie",
-			"Formatting": "movie [name]",
-			"Aliases": "[movie] [film]",
-			"Permissions": "@everyone"
+			"description": "View the rating and overview about a movie",
+			"formatting": "movie [name]"
 		},
 		"movieart": {
-			"Description": "View the Movie artwork of a specifed Movie",
-			"Formatting": "movieart [name]",
-			"Aliases": "[movieart] [filmart]",
-			"Permissions": "@everyone"
+			"description": "View the Movie artwork of a specifed Movie",
+			"formatting": "movieart [name]"
 		},
 		"mute": {
-			"Description": "Temporarily mute a user, removing their ability to talk in chat. Defaults to 10 minutes if left blank",
-			"Formatting": "mute <member> [time] [length] [reason]",
-			"Aliases": "[mute]",
-			"Permissions": "Ban Members"
+			"description": "Temporarily mute a user, removing their ability to talk in chat. Defaults to 10 minutes if left blank",
+			"formatting": "mute <member> [time] [length] [reason]",
+			"permissions": "Ban Members"
 		},
 		"mutecount": {
-			"Description": "Show how many times a user has been muted",
-			"Formatting": "mutecount <member>",
-			"Aliases": "[mutecount] [countmute]",
-			"Permissions": "Ban Members"
+			"description": "Show how many times a user has been muted",
+			"formatting": "mutecount <member>",
+			"permissions": "Ban Members"
 		},
 		"mutelist": {
-			"Description": "Show a description of every mute a user has had",
-			"Formatting": "mutelist <member>",
-			"Aliases": "[mutelist] [listmute]",
-			"Permissions": "Ban Members"
+			"description": "Show a description of every mute a user has had",
+			"formatting": "mutelist <member>",
+			"permissions": "Ban Members"
 		},
 		"namesearch": {
-			"Description": "Search for users with certain text in their name",
-			"Formatting": "namesearch [text]",
-			"Aliases": "[namesearch] [names]",
-			"Permissions": "@everyone"
+			"description": "Search for users with certain text in their name",
+			"formatting": "namesearch [text]"
 		},
 		"nickname": {
-			"Description": "Set your nickname",
-			"Formatting": "nickname [nickname]",
-			"Aliases": "[nickname] [nick] [name]",
-			"Permissions": "@everyone"
+			"description": "Set your nickname",
+			"formatting": "nickname [nickname]"
 		},
 		"packcreator": {
-			"Description": "Grants a user the pack creator role",
-			"Formatting": "packcreator <member>",
-			"Aliases": "[packcreator] [pack] [creator] [texture] [artist] [textureartist]",
-			"Permissions": "Ban Members"
+			"description": "Grants a user the pack creator role",
+			"formatting": "packcreator <member>",
+			"permissions": "Ban Members"
 		},
 		"ping": {
-			"Description": "Check the bots latency",
-			"Formatting": "ping",
-			"Aliases": "[ping]",
-			"Permissions": "@everyone"
+			"description": "Check the bots latency",
+			"formatting": "ping"
 		},
 		"purge": {
-			"Description": "Bulk delete messages from a channel. Defaults to 5 if left blank",
-			"Formatting": "purge [amount]",
-			"Aliases": "[purge] [prune] [clean] [delete]",
-			"Permissions": "Ban Members"
+			"description": "Bulk delete messages from a channel. Defaults to 5 if left blank",
+			"formatting": "purge [amount]",
+			"permissions": "Ban Members"
 		},
 		"randomnumber": {
-			"Description": "Generates a random number between two numbers",
-			"Formatting": "randomnumber [number] [number]",
-			"Aliases": "[randomnumber] [rand] [randint] [random]",
-			"Permissions": "@everyone"
+			"description": "Generates a random number between two numbers",
+			"formatting": "randomnumber [number] [number]"
 		},
 		"removerole": {
-			"Description": "Remove a role from a mentioned user",
-			"Formatting": "removerole <member> [role]",
-			"Aliases": "[removerole]",
-			"Permissions": "Administrator"
+			"description": "Remove a role from a mentioned user",
+			"formatting": "removerole <member> [role]",
+			"permissions": "Administrator"
 		},
 		"say": {
-			"Description": "Make a character say a message of your choice. [character] is optional",
-			"Formatting": "say [character] [message]",
-			"Aliases": "[say]",
-			"Permissions": "@everyone"
+			"description": "Make a character say a message of your choice. [character] is optional",
+			"formatting": "say [character] [message]"
 		},
 		"serverinfo": {
-			"Description": "Get info about the server",
-			"Formatting": "serverinfo",
-			"Aliases": "[serverinfo]",
-			"Permissions": "@everyone"
+			"description": "Get info about the server",
+			"formatting": "serverinfo"
 		},
 		"setaccount": {
-			"Description": "Tie a minecraft account to your discord, so you can run the Minecraft commands without specifying a user",
-			"Formatting": "setaccount [name]",
-			"Aliases": "[setaccount]",
-			"Permissions": "@everyone"
+			"description": "Tie a minecraft account to your discord, so you can run the Minecraft commands without specifying a user",
+			"formatting": "setaccount [name]"
 		},
 		"setjoin": {
-			"Description": "Set a users join position",
-			"Formatting": "setjoin <member> [position]",
-			"Aliases": "[setjoin]",
-			"Permissions": "Administrator"
+			"description": "Set a users join position",
+			"formatting": "setjoin <member> [position]",
+			"permissions": "Administrator"
 		},
 		"setnickname": {
-			"Description": "Set a users nickname",
-			"Formatting": "setnickname <member> [nickname]",
-			"Aliases": "[setnickname] [setnick] [setname]",
-			"Permissions": "Ban Members"
+			"description": "Set a users nickname",
+			"formatting": "setnickname <member> [nickname]",
+			"permissions": "Ban Members"
 		},
 		"skin": {
-			"Description": "Get a Minecraft Java users Minecraft skin",
-			"Formatting": "skin [name]",
-			"Aliases": "[skin]",
-			"Permissions": "@everyone"
+			"description": "Get a Minecraft Java users Minecraft skin",
+			"formatting": "skin [name]"
 		},
 		"thumbnail": {
-			"Description": "View the Thumbnail of a YouTube video",
-			"Formatting": "thumbnail [name]",
-			"Aliases": "[thumbnail] [ytthumbnail] [YTthumbnail] [thumb]",
-			"Permissions": "@everyone"
+			"description": "View the Thumbnail of a YouTube video",
+			"formatting": "thumbnail [name]"
 		},
 		"ticket": {
-			"Description": "Create a ticket to talk to the Ban Memberss. Mode can be [create] or [close]",
-			"Formatting": "ticket [mode] [message]",
-			"Aliases": "[ticket] [support]",
-			"Permissions": "@everyone"
+			"description": "Create a ticket to talk to the Ban Memberss. Mode can be [create] or [close]",
+			"formatting": "ticket [mode] [message]"
 		},
 		"tv": {
-			"Description": "View the rating and overview about a TV series",
-			"Formatting": "tv [name]",
-			"Aliases": "[tv] [TV] [show] [series]",
-			"Permissions": "@everyone"
+			"description": "View the rating and overview about a TV series",
+			"formatting": "tv [name]"
 		},
 		"tvart": {
-			"Description": "View the TV series artwork of a specifed TV series",
-			"Formatting": "tvart [name]",
-			"Aliases": "[tvart] [TVart] [showart] [seriesart]",
-			"Permissions": "@everyone"
+			"description": "View the TV series artwork of a specifed TV series",
+			"formatting": "tvart [name]"
 		},
 		"uptime": {
-			"Description": "Check how long the bot has been running for",
-			"Formatting": "uptime",
-			"Aliases": "[uptime]",
-			"Permissions": "@everyone"
+			"description": "Check how long the bot has been running for",
+			"formatting": "uptime"
 		},
 		"userinfo": {
-			"Description": "Get info about a desired user",
-			"Formatting": "userinfo  <member>",
-			"Aliases": "[userinfo] [whois]",
-			"Permissions": "@everyone"
+			"description": "Get info about a desired user",
+			"formatting": "userinfo  <member>"
 		},
 		"warn": {
-			"Description": "Warns a user",
-			"Formatting": "warn <member> [reason]",
-			"Aliases": "[warn]",
-			"Permissions": "Ban Members"
+			"description": "Warns a user",
+			"formatting": "warn <member> [reason]",
+			"permissions": "Ban Members"
 		},
 		"warnclear": {
-			"Description": "Clear warns from a user",
-			"Formatting": "warnclear <member> [number]",
-			"Aliases": "[warnclear] [clearwarn] [removewarn] [warnremove]",
-			"Permissions": "Administrator"
+			"description": "Clear warns from a user",
+			"formatting": "warnclear <member> [number]",
+			"permissions": "Administrator"
 		},
 		"warncount": {
-			"Description": "Show how many times a user has been warned",
-			"Formatting": "warncount <member>",
-			"Aliases": "[warncount] [countwarn]",
-			"Permissions": "Ban Members"
+			"description": "Show how many times a user has been warned",
+			"formatting": "warncount <member>",
+			"permissions": "Ban Members"
 		},
 		"warnlist": {
-			"Description": "Show a description of every warn a user has had",
-			"Formatting": "warnlist <member>",
-			"Aliases": "[warnlist] [listwarn]",
-			"Permissions": "Ban Members"
+			"description": "Show a description of every warn a user has had",
+			"formatting": "warnlist <member>",
+			"permissions": "Ban Members"
 		},
 		"youtube": {
-			"Description": "Search for a YouTube video",
-			"Formatting": "youtube [name]",
-			"Aliases": "[youtube] [yt] [YT] [video]",
-			"Permissions": "@everyone"
+			"description": "Search for a YouTube video",
+			"formatting": "youtube [name]"
 		},
 		"mobparts": {
-			"Description": "Get a list of bone names for use with OptiFine CEM",
-			"Formatting": "mobparts [entity]",
-			"Aliases": "[mobparts] [cem]",
-			"Permissions": "@everyone"
+			"description": "Get a list of bone names for use with OptiFine CEM",
+			"formatting": "mobparts [entity]"
 		},
 		"setartchive": {
-			"Description": "Set the channel for the Artchive command",
-			"Formatting": "setartchive <channel>",
-			"Aliases": "[setartchive] [seta] [setart] [setarchive]",
-			"Permissions": "Ban Members"
+			"description": "Set the channel for the Artchive command",
+			"formatting": "setartchive <channel>",
+			"permissions": "Ban Members"
 		},
 		"setlogs": {
-			"Description": "Set the channel for the server logs",
-			"Formatting": "setlogs <channel>",
-			"Aliases": "[setlogs] [setlog]",
-			"Permissions": "Ban Members"
+			"description": "Set the channel for the server logs",
+			"formatting": "setlogs <channel>",
+			"permissions": "Ban Members"
 		},
 		"muteclear": {
-			"Description": "Clear a mute from a member",
-			"Formatting": "muteclear <member>[slotnumber]",
-			"Aliases": "[muteclear] [clearmute] [removemute] [muteremove]",
-			"Permissions": "Ban Members"
+			"description": "Clear a mute from a member",
+			"formatting": "muteclear <member>[slotnumber]",
+			"permissions": "Ban Members"
 		},
 		"unmute": {
-			"Description": "Unmute a muted member",
-			"Formatting": "unmute <member>",
-			"Aliases": "[unmute]",
-			"Permissions": "Ban Members"
+			"description": "Unmute a muted member",
+			"formatting": "unmute <member>",
+			"permissions": "Ban Members"
 		},
 		"support": {
-			"Description": "Request support for the bot. Just send your message after the command and we will get back to you asap",
-			"Formatting": "support [message]",
-			"Aliases": "[support]",
-			"Permissions": "@everyone"
+			"description": "Request support for the bot. Just send your message after the command and we will get back to you asap",
+			"formatting": "support [message]"
 		},
 		"reply": {
-			"Description": "Reply to a support message",
-			"Formatting": "reply [channelID][memberID][reply]",
-			"Aliases": "[reply]",
-			"Permissions": "Ban Members\n- only in GuildID = 736777568182861944"
+			"description": "Reply to a support message",
+			"formatting": "reply [channelID][memberID][reply]",
+			"permissions": "Ban Members\n- only in GuildID = 736777568182861944"
 		},
 		"removebannedword": {
-			"Description": "Remove a banned words",
-			"Formatting": "removebannedwords [word]",
-			"Aliases": "[removebannedwords]",
-			"Permissions": "Ban Members"
+			"description": "Remove a banned words",
+			"formatting": "removebannedwords [word]",
+			"permissions": "Ban Members"
 		},
 		"notice": {
-			"Description": "Send a bot notice",
-			"Formatting": "notice [message]",
-			"Aliases": "[notice]",
-			"Permissions": "Administrator\n- only in GuildID = 736777568182861944"
+			"description": "Send a bot notice",
+			"formatting": "notice [message]",
+			"permissions": "Administrator\n- only in GuildID = 736777568182861944"
 		},
 		"setnotices": {
-			"Description": "Set the channel for the bot notices",
-			"Formatting": "setnotice <channel>",
-			"Aliases": "[setnotice]",
-			"Permissions": "Ban Members"
+			"description": "Set the channel for the bot notices",
+			"formatting": "setnotice <channel>",
+			"permissions": "Ban Members"
+		},
+		"disablenotices": {
+			"description": "Disable notices from being sent to your server",
+			"formatting": "disablenotices",
+			"permissions": "Administrator"
 		},
 		"leave": {
-			"Description": "Make the bot leave a voice channel",
-			"Formatting": "leave",
-			"Aliases": "[leave] [l] [die]",
-			"Permissions": "@everyone"
+			"description": "Make the bot leave a voice channel",
+			"formatting": "leave"
 		},
 		"play": {
-			"Description": "Play music into a voice channel. This is a work in progress and is somewhat limited",
-			"Formatting": "play [song]",
-			"Aliases": "[play] [p]",
-			"Permissions": "@everyone"
+			"description": "Play music into a voice channel. This is a work in progress and is somewhat limited",
+			"formatting": "play [song]"
 		},
 		"resetjoin": {
-			"Description": "Reset the join positions of all members to be the last time they joined the server",
-			"Formatting": "resetjoin",
-			"Aliases": "[resetjoin]",
-			"Permissions": "Administrator"
+			"description": "Reset the join positions of all members to be the last time they joined the server",
+			"formatting": "resetjoin",
+			"permissions": "Administrator"
 		},
 		"customembed": {
-			"Description": "Change the bots embed colour",
-			"Formatting": "customembed [colour]",
-			"Aliases": "[customembed] [customembedcolour] [customcolour] [customembedcolor] [customcolor]",
-			"Permissions": "Administrator"
+			"description": "Change the bots embed colour",
+			"formatting": "customembed [colour]",
+			"permissions": "Administrator"
 		},
 		"tts": {
-			"Description": "Text to speech some text",
+			"description": "Text to speech some text. The [language] is optional",
 			"Cool Down": "5",
-			"Formatting": "tts [text]",
-			"Aliases": "[tts] [speech] [texttospeech] [textspeech]",
-			"Permissions": "@everyone"
+			"formatting": "tts [language][text]"
 		},
 		"lyrics": {
-			"Description": "Find lyrics to a song",
+			"description": "Find lyrics to a song. Seperate the artist and song name using a semi-colon [;]",
 			"Cool Down": "20",
-			"Formatting": "lyrics [artist; song]",
-			"Aliases": "[lyrics] [lyric]",
-			"Permissions": "@everyone"
+			"formatting": "lyrics [artist; song]"
 		},
 		"emoji": {
-			"Description": "View an emoji",
-			"Formatting": "emoji [emoji]",
-			"Aliases": "[emoji] [emote] [e]",
-			"Permissions": "@everyone"
+			"description": "View an emoji",
+			"formatting": "emoji [emoji]"
 		},
 		"invite": {
-			"Description": "Get the bots invite URL",
-			"Formatting": "invite",
-			"Aliases": "[invite] [i]",
-			"Permissions": "@everyone"
+			"description": "Get the bots invite URL",
+			"formatting": "invite"
 		},
 		"dm": {
-			"Description": "Direct message someone using the bot",
-			"Formatting": "dm [memberID][message]",
-			"Aliases": "[dm]",
-			"Permissions": "<@519179484340027392>"
+			"description": "Direct message someone using the bot",
+			"formatting": "dm [memberID][message]",
+			"permissions": "<@519179484340027392>"
 		},
 		"setjoinrole": {
-			"Description": "Set a role for members to gain when joining the server",
-			"Formatting": "setjoinrole [role]",
-			"Aliases": "[setjoinrole] [sjr] [ajr] [addjoinrole]",
-			"Permissions": "Administrator"
+			"description": "Set a role for members to gain when joining the server",
+			"formatting": "setjoinrole [role]",
+			"permissions": "Administrator"
 		},
 		"listjoinroles": {
-			"Description": "List all the currently set server join roles",
-			"Formatting": "listjoinroles",
-			"Aliases": "[listjoinroles] [ljr] [listjoinrole]",
-			"Permissions": "@everyone"
+			"description": "List all the currently set server join roles",
+			"formatting": "listjoinroles"
 		},
 		"removejoinrole": {
-			"Description": "Remove a role from the list of server join roles",
-			"Formatting": "removejoinrole [role]",
-			"Aliases": "[removejoinrole] [rjr]",
-			"Permissions": "Administrator"
+			"description": "Remove a role from the list of server join roles",
+			"formatting": "removejoinrole [role]",
+			"permissions": "Administrator"
 		},
 		"membercount": {
-			"Description": "Display the number of members currently in the server",
-			"Formatting": "membercount",
-			"Aliases": "[membercount] [members]",
-			"Permissions": "@everyone"
+			"description": "Display the number of members currently in the server",
+			"formatting": "membercount"
 		},
 		"commandcount": {
-			"Description": "Display the number of commands the bot has",
-			"Formatting": "commandcount",
-			"Aliases": "[commandcount] [command]",
-			"Permissions": "@everyone"
+			"description": "Display the number of commands the bot has",
+			"formatting": "commandcount"
 		},
 		"setmembercounter": {
-			"Description": "Set a channel to use to display the current member count.\nA `!` must be used in the custom text to indicate the number, for example: `e!setmembercount [channelID] Current Members: !`",
-			"Formatting": "setmembercounter [channelID][customText]",
-			"Aliases": "[setmembercounter] [smc] [membercounter]",
-			"Permissions": "Administrator"
+			"description": "Set a channel to use to display the current member count.\nA `!` must be used in the custom text to indicate the number, for example: `e!setmembercount [channelID] Current Members: !`",
+			"formatting": "setmembercounter [channelID][customText]",
+			"permissions": "Administrator"
 		},
 		"translate": {
-			"Description": "Translate a message into another language.\nTranslates to English if no language is specified.\nList all languages with `e!translate`",
-			"Formatting": "translate [language][message]",
-			"Aliases": "[translate]",
-			"Permissions": "@everyone"
+			"description": "Translate a message into another language.\nTranslates to English if no language is specified.\nList all languages with `e!translate`",
+			"formatting": "translate [language][message]"
 		},
 		"squarify": {
-			"Description": "Squarifies images. The first number is the square size, the second is the size of the gap between them which is removed",
-			"Formatting": "squarify [squaresize][gapsize][url]",
-			"Aliases": "[squarify]",
-			"Permissions": "@everyone"
+			"description": "Squarifies images. The first number is the square size, the second is the size of the gap between them which is removed",
+			"formatting": "squarify [squaresize][gapsize][url]"
 		},
 		"magnify": {
-			"Description": "Enlarges an image",
-			"Formatting": "magnify [url]",
-			"Aliases": "[magnify][resize]",
-			"Permissions": "@everyone"
+			"description": "Enlarges an image",
+			"formatting": "magnify [url]"
 		},
 		"palette": {
-			"Description": "Show the palette of an image",
-			"Formatting": "palette [url]",
-			"Aliases": "[palette]",
-			"Permissions": "@everyone"
+			"description": "Show the palette of an image",
+			"formatting": "palette [url]"
 		},
 		"quote": {
-			"Description": "Generate an \"inspirational\" image quote",
-			"Formatting": "quote",
-			"Aliases": "[quote] [inspire]",
-			"Permissions": "@everyone"
+			"description": "Generate an \"inspirational\" image quote",
+			"formatting": "quote"
 		},
 		"textquote": {
-			"Description": "Generate an \"inspirational\" quote",
-			"Formatting": "textquote",
-			"Aliases": "[textquote] [textinspire]",
-			"Permissions": "@everyone"
+			"description": "Generate an \"inspirational\" quote",
+			"formatting": "textquote"
 		},
 		"ellipse": {
-			"Description": "Draw an ellipse on an image.\n[x][y] is top left corner, [x2][y2] is bottom right corner",
-			"Formatting": "ellipse [x][y][x2][y2][colour][url]",
-			"Aliases": "[ellipse]",
-			"Permissions": "@everyone"
+			"description": "Draw an ellipse on an image.\n[x][y] is top left corner, [x2][y2] is bottom right corner",
+			"formatting": "ellipse [x][y][x2][y2][colour][url]"
 		},
 		"fill": {
-			"Description": "Fill a closed on an image with colour",
-			"Formatting": "fill [x][y][colour][tolerance][url]",
-			"Aliases": "[fill] [flood]",
-			"Permissions": "@everyone"
+			"description": "Fill a closed on an image with colour",
+			"formatting": "fill [x][y][colour][tolerance][url]"
 		},
 		"image": {
-			"Description": "Generate a new blank image",
-			"Formatting": "image [width][height][colour]",
-			"Aliases": "[image]",
-			"Permissions": "@everyone"
+			"description": "Generate a new blank image",
+			"formatting": "image [width][height][colour]"
 		},
 		"line": {
-			"Description": "Draw a line across an image.\n[x][y] is top left corner, [x2][y2] is bottom right corner",
-			"Formatting": "line [x][y][x2][y2][colour][url]",
-			"Aliases": "[line]",
-			"Permissions": "@everyone"
+			"description": "Draw a line across an image.\n[x][y] is top left corner, [x2][y2] is bottom right corner",
+			"formatting": "line [x][y][x2][y2][colour][url]"
 		},
 		"pixel": {
-			"Description": "Add a single pixel to an image",
-			"Formatting": "pixel [x][y][colour][url]",
-			"Aliases": "[pixel]",
-			"Permissions": "@everyone"
+			"description": "Add a single pixel to an image",
+			"formatting": "pixel [x][y][colour][url]"
 		},
 		"polygon": {
-			"Description": "Draw a polygon over an image.\n[x][y] is the centre of the polygon",
-			"Formatting": "polygon [x][y][radius][sides][colour][url]",
-			"Aliases": "[polygon] [poly]",
-			"Permissions": "@everyone"
+			"description": "Draw a polygon over an image.\n[x][y] is the centre of the polygon",
+			"formatting": "polygon [x][y][radius][sides][colour][url]"
 		},
 		"rectangle": {
-			"Description": "Draw a rectangle over an image.\n[x][y] is top left corner, [x2][y2] is bottom right corner",
-			"Formatting": "rectangle [x][y][x2][y2][colour][url]",
-			"Aliases": "[rectangle] [rect] [square]",
-			"Permissions": "@everyone"
+			"description": "Draw a rectangle over an image.\n[x][y] is top left corner, [x2][y2] is bottom right corner",
+			"formatting": "rectangle [x][y][x2][y2][colour][url]"
 		},
 		"text": {
-			"Description": "Write text over an image.\nThe-text-must-use-dashes-instead-of-spaces.\nUse the command \"text fonts\" to show a list of fonts",
-			"Formatting": "text [text][x][y][size][colour][font][url]",
-			"Aliases": "[text]",
-			"Permissions": "@everyone"
+			"description": "Write text over an image.\nThe-text-must-use-dashes-instead-of-spaces.\nUse the command \"text fonts\" to show a list of fonts",
+			"formatting": "text [text][x][y][size][colour][font][url]"
 		},
 		"embed": {
-			"Description": "Send a custom embed using the bot.\nAll parameters must be seperated with \"; \".\nPut \"none\" if you don't want something",
-			"Formatting": "embed [title][description][thumbnailURL][imageURL]",
-			"Aliases": "[embed]",
-			"Permissions": "@everyone"
+			"description": "Send a custom embed using the bot.\nAll parameters must be seperated with \"; \".\nPut \"none\" if you don't want something",
+			"formatting": "embed [title][description][thumbnailURL][imageURL]"
 		},
 		"define": {
-			"Description": "Shows the descriptions of a word",
-			"Formatting": "define [word]",
-			"Aliases": "[define]",
-			"Permissions": "@everyone"
+			"description": "Shows the descriptions of a word",
+			"formatting": "define [word]"
 		},
 		"prefix": {
-			"Description": "Change the prefix of the bot on your server",
-			"Formatting": "prefix [prefix]",
-			"Aliases": "[prefix]",
-			"Permissions": "Administrator"
+			"description": "Change the prefix of the bot on your server",
+			"formatting": "prefix [prefix]",
+			"permissions": "Administrator"
 		},
 		"band": {
-			"Description": "Put some members into a band! Multiple members optional",
-			"Formatting": "band <member><member><member><member>",
-			"Aliases": "[band]",
-			"Permissions": "@everyone"
+			"description": "Put some members into a band! Multiple members optional",
+			"formatting": "band <member><member><member><member>"
 		},
 		"remindme": {
-			"Description": "Set a reminder for yourself",
-			"Formatting": "remindme [duration][reminder]",
-			"Aliases": "[remindme] [remind] [reminder]",
-			"Permissions": "@everyone"
+			"description": "Set a reminder for yourself",
+			"formatting": "remindme [duration][reminder]"
 		},
 		"monketest": {
-			"Description": "Test how much of a monke someone is!",
-			"Formatting": "monketest <member>",
-			"Aliases": "[monketest] [monke] [monkey] [monkeytest]",
-			"Permissions": "@everyone"
+			"description": "Test how much of a monke someone is!",
+			"formatting": "monketest <member>"
 		},
 		"lock": {
-			"Description": "Toggle on and off everyone's ability to send messages in a channel",
-			"Formatting": "lock <channel>",
-			"Aliases": "[lock] [unlock]",
-			"Permissions": "Ban Members"
+			"description": "Toggle on and off everyone's ability to send messages in a channel",
+			"formatting": "lock <channel>",
+			"permissions": "Ban Members"
+		},
+		"alias": {
+			"description": "Show the aliases for a command",
+			"formatting": "alias [command]"
+		},
+		"disable": {
+			"description": "Toggle commands being disabled in a server",
+			"formatting": "disable [command]",
+			"permissions": "Administrator"
+		},
+		"disabled": {
+			"description": "Show which commands are disabled in a server",
+			"formatting": "disabled"
+		},
+		"leet": {
+			"description": "Convert text to and from Leetspeak",
+			"formatting": "leet [text]"
+		},
+		"charshift": {
+			"description": "Perform a Caesar Shift on a message by a determined amount",
+			"formatting": "charshift [offset][text]"
+		},
+		"unban": {
+			"description": "Unban a user from the server",
+			"formatting": "unban [userID]",
+			"permissions": "Ban Members"
 		}
 	}
 }
