@@ -127,7 +127,7 @@
 				"account             <member>",
 				"cape                [name]",
 				"head                [name]",
-				"mcwiki              [searchTerm]"
+				"mcwiki              [searchTerm]",
 				"mobparts            [entity]",
 				"pmcmap              [searchTerm]",
 				"pmcmember           [searchTerm]",
