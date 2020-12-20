@@ -91,7 +91,7 @@
 				"ping                [n/a]",
 				"prefix              [prefix]",
 				"prefixlessmode      [n/a]",
-				"setmembercounter    [channelID][customText]",
+				"setmembercounter    [channelID][text]",
 				"support             [message]",
 				"uptime              [n/a]"
 			]
@@ -576,7 +576,7 @@
 		},
 		"setmembercounter": {
 			"description": "Set a channel to use to display the current member count.\nA `!` must be used in the custom text to indicate the number, for example: `e!setmembercount [channelID] Current Members: !`",
-			"formatting": "setmembercounter [channelID][customText]",
+			"formatting": "setmembercounter [channelID][text]",
 			"permissions": "Administrator"
 		},
 		"translate": {
