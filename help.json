@@ -127,7 +127,12 @@
 				"account             <member>",
 				"cape                [name]",
 				"head                [name]",
+				"mcwiki              [searchTerm]"
 				"mobparts            [entity]",
+				"pmcmap              [searchTerm]",
+				"pmcmember           [searchTerm]",
+				"pmcpack             [searchTerm]",
+				"pmcskin             [searchTerm]",
 				"setaccount          [name]",
 				"skin                [name]"
 			]
@@ -142,7 +147,6 @@
 		"fun": {
 			"commands": [
 				"8ball               [question]",
-				"band                <member><member><member><member>",
 				"bean                <member>",
 				"beanrequest         [n/a]",
 				"charshift           [offset][text]",
@@ -175,8 +179,10 @@
 		},
 		"media": {
 			"commands": [
+				"gif                 [tag]",
 				"movie               [name]",
 				"movieart            [name]",
+				"randomgif           [tag]",
 				"thumbnail           [name]",
 				"tv                  [name]",
 				"tvart               [name]",
@@ -189,9 +195,12 @@
 				"Drawing"
 			],
 			"commands": [
+				"band                <member><member><member><member>",
 				"magnify             [url]",
+				"marry               <member><member>",
 				"palette             [url]",
-				"squarify            [squaresize][gapsize][url]"
+				"squarify            [squaresize][gapsize][url]",
+				"unband              <member><member><member><member>"
 			]
 		},
 		"drawing": {
@@ -642,6 +651,10 @@
 			"description": "Put some members into a band! Multiple members optional",
 			"formatting": "band <member><member><member><member>"
 		},
+		"unband": {
+			"description": "Remove some members from a band! Multiple members optional",
+			"formatting": "band <member><member><member><member>"
+		},
 		"remindme": {
 			"description": "Set a reminder for yourself",
 			"formatting": "remindme [duration][reminder]"
@@ -680,6 +693,30 @@
 			"description": "Unban a user from the server",
 			"formatting": "unban [userID]",
 			"permissions": "Ban Members"
+		},
+		"marry": {
+			"description": "Marry to members together! If the second member is left blank, you will be that member",
+			"formatting": "marry <member><member>"
+		},
+		"pmcpack": {
+			"description": "Find a pack on Planet Minecraft",
+			"formatting": "pmcpack [searchTerm]"
+		},
+		"pmcskin": {
+			"description": "Find a skin on Planet Minecraft",
+			"formatting": "pmcskin [searchTerm]"
+		},
+		"pmcmap": {
+			"description": "Find a map on Planet Minecraft",
+			"formatting": "pmcmap [searchTerm]"
+		},
+		"pmcmember": {
+			"description": "Find a member on Planet Minecraft",
+			"formatting": "pmcmember [searchTerm]"
+		},
+		"mcwiki": {
+			"description": "Search something on the Minecraft Wiki",
+			"formatting": "mcwiki [searchTerm]"
 		}
 	}
 }
