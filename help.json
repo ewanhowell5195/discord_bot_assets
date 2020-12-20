@@ -89,7 +89,8 @@
 				"invite              [n/a]",
 				"membercount         [n/a]",
 				"ping                [n/a]",
-				"prefix              [prefix]", 
+				"prefix              [prefix]",
+				"prefixlessmode      [n/a]",
 				"setmembercounter    [channelID][customText]",
 				"support             [message]",
 				"uptime              [n/a]"
@@ -717,6 +718,10 @@
 		"mcwiki": {
 			"description": "Search something on the Minecraft Wiki",
 			"formatting": "mcwiki [searchTerm]"
+		},
+		"prefixlessmode": {
+			"description": "Allow for commands to not need a prefix when in DMs",
+			"formatting": "prefixlessmode"
 		}
 	}
 }
