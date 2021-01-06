@@ -174,8 +174,7 @@
 				"imgur               [imageURL]",
 				"mock                [text]",
 				"remindme            [duration][reminder]",
-				"serverinfo          [n/a]",
-				"translate           [language][message]"
+				"serverinfo          [n/a]"
 			]
 		},
 		"media": {
@@ -579,10 +578,6 @@
 			"formatting": "setmembercounter [channelID][text]",
 			"permissions": "Administrator"
 		},
-		"translate": {
-			"description": "Translate a message into another language.\nTranslates to English if no language is specified.\nList all languages with `e!translate`",
-			"formatting": "translate [language][message]"
-		},
 		"squarify": {
 			"description": "Squarifies images. The first number is the square size, the second is the size of the gap between them which is removed",
 			"formatting": "squarify [squaresize][gapsize][url]"
@@ -722,6 +717,18 @@
 		"prefixlessmode": {
 			"description": "Allow for commands to not need a prefix when in DMs",
 			"formatting": "prefixlessmode"
+		},
+		"gif": {
+			"description": "Search for a gif on Tenor",
+			"formatting": "gif [tag]"
+		},
+		"randomgif": {
+			"description": "Get a random gif from the first 20 results on Tenor",
+			"formatting": "randomgif [tag]"
+		},
+		"blockify": {
+			"description": "Turn an image into Minecraft block art!",
+			"formatting": "blockify [imageURL]"
 		}
 	}
 }
