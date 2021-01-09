@@ -273,7 +273,7 @@
 		"endbot": {
 			"description": "Makes the bot log off",
 			"formatting": "endbot",
-			"permissions": "<@519179484340027392>"
+			"permissions": "Bot Owner"
 		},
 		"flip": {
 			"description": "Flips a coin",
@@ -498,7 +498,7 @@
 		"notice": {
 			"description": "Send a bot notice",
 			"formatting": "notice [message]",
-			"permissions": "Administrator\n- only in GuildID = 736777568182861944"
+			"permissions": "Bot Owner"
 		},
 		"setnotices": {
 			"description": "Set the channel for the bot notices",
@@ -530,12 +530,12 @@
 		},
 		"tts": {
 			"description": "Text to speech some text. The [language] is optional",
-			"Cool Down": "5",
+			"cooldown": 5,
 			"formatting": "tts [language][text]"
 		},
 		"lyrics": {
 			"description": "Find lyrics to a song. Seperate the artist and song name using a semi-colon [;]",
-			"Cool Down": "20",
+			"cooldown": 20,
 			"formatting": "lyrics [artist; song]"
 		},
 		"emoji": {
@@ -549,7 +549,7 @@
 		"dm": {
 			"description": "Direct message someone using the bot",
 			"formatting": "dm [memberID][message]",
-			"permissions": "<@519179484340027392>"
+			"permissions": "Bot Owner"
 		},
 		"setjoinrole": {
 			"description": "Set a role for members to gain when joining the server",
