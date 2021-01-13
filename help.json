@@ -117,8 +117,6 @@
 				"id                  <member>",
 				"joinposition        <member>",
 				"nickname            [nickname]",
-				"resetjoin           [n/a]",
-				"setjoin             <member>[position]",
 				"setnickname         <member>[nickname]",
 				"userinfo            <member>"
 			]
@@ -395,11 +393,6 @@
 			"description": "Tie a minecraft account to your discord, so you can run the Minecraft commands without specifying a user",
 			"formatting": "setaccount [name]"
 		},
-		"setjoin": {
-			"description": "Set a users join position",
-			"formatting": "setjoin <member> [position]",
-			"permissions": "Administrator"
-		},
 		"setnickname": {
 			"description": "Set a users nickname",
 			"formatting": "setnickname <member> [nickname]",
@@ -517,11 +510,6 @@
 		"play": {
 			"description": "Play music into a voice channel. This is a work in progress and is somewhat limited",
 			"formatting": "play [song]"
-		},
-		"resetjoin": {
-			"description": "Reset the join positions of all members to be the last time they joined the server",
-			"formatting": "resetjoin",
-			"permissions": "Administrator"
 		},
 		"customembed": {
 			"description": "Change the bots embed colour",
