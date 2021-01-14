@@ -206,6 +206,7 @@
 				"magnify             [imageURL]",
 				"marry               <member><member>",
 				"monke               <member><member><member><member>",
+				"monkeband           <member><member><member>",
 				"palette             [imageURL]",
 				"resize              [width][height][imageURL]",
 				"squarify            [squaresize][gapsize][imageURL]",
@@ -623,6 +624,10 @@
 		"unband": {
 			"description": "Remove some members from a band! Multiple members optional",
 			"formatting": "<member> <member> <member> <member>"
+		},
+		"monkeband": {
+			"description": "Put some members into a band of moneys! Multiple members optional",
+			"formatting": "<member> <member> <member>"
 		},
 		"remindme": {
 			"description": "Set a reminder for yourself",
