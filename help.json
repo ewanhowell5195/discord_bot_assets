@@ -508,7 +508,7 @@
 			"permissions": "Administrator"
 		},
 		"tts": {
-			"description": "Text to speech some text. The [language] is optional",
+			"description": "Text to speech some text. The [language] is optional. The language must be inside [] for it to register",
 			"cooldown": 5,
 			"formatting": "[language] [text]"
 		},
