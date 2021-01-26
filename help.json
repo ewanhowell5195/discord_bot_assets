@@ -30,7 +30,10 @@
 		"vc": {
 			"commands": [
 				"leave               [n/a]",
+				"pause               [n/a]",
 				"play                [link]",
+				"resume              [n/a]",
+				"stop                [n/a]",
 				"tts                 [language][text]"
 			]
 		},
@@ -157,11 +160,12 @@
 				"bean                <member>",
 				"beanrequest         [n/a]",
 				"charshift           [offset][text]",
+				"dadjoke             [n/a]",
 				"flip                [n/a]",
+				"joke                [n/a]",
 				"kill                <member>[weapon]",
 				"leet                [text]",
 				"love                [name] [name]",
-				"lyrics              [artist; song]",
 				"mock                [text]",
 				"monketest           <member>",
 				"namesearch          [text]",
@@ -451,12 +455,12 @@
 		"setartchive": {
 			"description": "Set the channel for the Artchive command",
 			"formatting": "<channel>",
-			"permissions": "Ban Members"
+			"permissions": "Administrator"
 		},
 		"setlogs": {
 			"description": "Set the channel for the server logs",
 			"formatting": "<channel>",
-			"permissions": "Ban Members"
+			"permissions": "Administrator"
 		},
 		"muteclear": {
 			"description": "Clear a mute from a member",
@@ -490,7 +494,7 @@
 		"setnotices": {
 			"description": "Set the channel for the bot notices",
 			"formatting": "<channel>",
-			"permissions": "Ban Members"
+			"permissions": "Administrator"
 		},
 		"disablenotices": {
 			"description": "Disable notices from being sent to your server",
@@ -512,11 +516,6 @@
 			"description": "Text to speech some text. The [language] is optional. The language must be inside [] for it to register",
 			"cooldown": 5,
 			"formatting": "[language] [text]"
-		},
-		"lyrics": {
-			"description": "Find lyrics to a song. Seperate the artist and song name using a semi-colon [;]",
-			"cooldown": 20,
-			"formatting": "[artist; song]"
 		},
 		"emoji": {
 			"description": "View an emoji",
@@ -742,6 +741,26 @@
 		},
 		"credits": {
 			"description": "View the credits for the bot. This includes any APIs used and any websites data is sourced from"
+		},
+		"joke": {
+			"description": "Generate a joke"
+		},
+		"dadjoke": {
+			"description": "Generate a dad joke"
+		},
+		"settts": {
+			"description": "Set the channel where messages to be automatically read out load in a voice channel as TTS\nUsers not in a voice channel, and urls are ignored.",
+			"formatting": "<channel>",
+			"permissions": "Administrator"
+		},
+		"stop": {
+			"description": "Stop audio in a voice channel"
+		},
+		"pause": {
+			"description": "Pause audio in a voice channel"
+		},
+		"resume": {
+			"description": "Resume audio in a voice channel"
 		}
 	}
 }
