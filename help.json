@@ -18,7 +18,8 @@
 				"Mutes",
 				"Roles",
 				"Warns",
-				"Wordfilter"
+				"Wordfilter",
+				"Blacklists"
 			],
 			"commands": [
 				"ban                 <member>[reason]",
@@ -31,8 +32,10 @@
 			"commands": [
 				"leave               [n/a]",
 				"pause               [n/a]",
-				"play                [link]",
+				"play                [searchTerm]",
+				"queue               [n/a]",
 				"resume              [n/a]",
+				"shuffle             [n/a]",
 				"stop                [n/a]",
 				"tts                 [language][text]"
 			]
@@ -201,7 +204,7 @@
 			]
 		},
 		"images": {
-			"description": "These commands take many image inputs. Where it says [imageURL], this can be a url, member ping, uploaded image, emoji, or leave it blank to target an image/url/emoji from a previous message in the channel.",
+			"description": "These commands take many image inputs. Where it says [imageURL], this can be a url, member ping, uploaded image, emoji, or leave it blank to target an image/url/emoji from a previous message in the channel",
 			"subcategories": [
 				"Drawing"
 			],
@@ -213,6 +216,7 @@
 				"monkeband           <member><member><member>",
 				"palette             [imageURL]",
 				"resize              [width][height][imageURL]",
+				"spritesheet         [imageURL]",
 				"squarify            [squaresize][gapsize][imageURL]",
 				"unband              <member><member><member><member>"
 			]
@@ -228,6 +232,14 @@
 				"polygon             [x][y][radius][sides][colour][imageURL]",
 				"rectangle           [x][y][x2][y2][colour][imageURL]",
 				"text                [text][x][y][size][colour][font][imageURL]"
+			]
+		},
+		"blacklists": {
+			"description": "Blacklists are a way to block users from running specifed commands.\n[command] is optional. Not specifying one will default to blocking all commands",
+			"commands": [
+				"blacklist           <member>[command]",
+				"removeblacklist     <member>[command]",
+				"viewblacklist       <member>"
 			]
 		}
 	},
@@ -504,8 +516,8 @@
 			"description": "Make the bot leave a voice channel"
 		},
 		"play": {
-			"description": "Play music into a voice channel. This is a work in progress and is somewhat limited",
-			"formatting": "[link]"
+			"description": "Play audio into a voice channel.\nSearches are done through YouTube",
+			"formatting": "[searchTerm]"
 		},
 		"customembed": {
 			"description": "Change the bots embed colour",
@@ -761,6 +773,25 @@
 		},
 		"resume": {
 			"description": "Resume audio in a voice channel"
+		},
+		"blacklist": {
+			"description": "Blacklist members from being able to run certain commands.\n[command] is optional. Not specifying one will default to blocking all commands",
+			"formatting": "<member> [channel]",
+			"permissions": "Ban Members"
+		},
+		"removeblacklist": {
+			"description": "Remove a blacklisted command from a member.\nIf a member has all commands blacklisted, leave [command] blank",
+			"formatting": "<member> [channel]",
+			"permissions": "Ban Members"
+		},
+		"viewblacklist": {
+			"description": "View the commands blacklisted for a member",
+			"formatting": "<member>",
+			"permissions": "Ban Members"
+		},
+		"spritesheet": {
+			"description": "Turn an animated GIF into a spritesheet",
+			"formatting": "imageURL"
 		}
 	}
 }
