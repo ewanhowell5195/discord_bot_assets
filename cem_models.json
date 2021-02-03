@@ -128,7 +128,7 @@
 				]
 			},
 			"chest_large": {
-				"display_name": "Chest [Large]",
+				"display_name": "Large Chest",
 				"bones": [
 					"lid_left",
 					"base_left",
@@ -964,7 +964,7 @@
 				]
 			},
 			"trapped_chest_large": {
-				"display_name": "Trapped Chest [Large]",
+				"display_name": "Large Trapped Chest",
 				"bones": [
 					"lid_left",
 					"base_left",
@@ -1197,7 +1197,6 @@
 			"elytra",
 			"furnace_minecart",
 			"glowsquid",
-			"goat",
 			"hoglin",
 			"hopper_minecart",
 			"llama_carpet",
@@ -1214,6 +1213,7 @@
 			"zoglin"
 		],
 		"unreleased": [
+			"goat",
 			"warden"
 		]
 	}
