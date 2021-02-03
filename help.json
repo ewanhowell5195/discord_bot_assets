@@ -139,9 +139,9 @@
 			"commands": [
 				"account             <member>",
 				"cape                [name]",
+				"cem                 [entity]",
 				"head                [name]",
 				"mcwiki              [searchTerm]",
-				"mobparts            [entity]",
 				"pmcmap              [searchTerm]",
 				"pmcmember           [searchTerm]",
 				"pmcpack             [searchTerm]",
@@ -460,8 +460,8 @@
 			"description": "Search for a YouTube video",
 			"formatting": "[name]"
 		},
-		"mobparts": {
-			"description": "Get a list of bone names for use with OptiFine CEM",
+		"cem": {
+			"description": "Get a list of bone names for use with OptiFine CEM.\nDont supply an entity to get a full list of entities.",
 			"formatting": "[entity]"
 		},
 		"setartchive": {
@@ -485,7 +485,7 @@
 			"permissions": "Ban Members"
 		},
 		"support": {
-			"description": "Request support for the bot. Just send your message after the command and we will get back to you asap",
+			"description": "Request support for the bot. Just send your message after the command and we will get back to you asap.",
 			"formatting": "[message]"
 		},
 		"reply": {
