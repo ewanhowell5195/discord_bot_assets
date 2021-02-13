@@ -79,7 +79,8 @@
 				"setartchive         <channel>",
 				"setlogs             <channel>",
 				"setmembercounter    [channelID][text]",
-				"setnotices          <channel>"
+				"setnotices          <channel>",
+				"sortchannels        <category>"
 			]
 		},
 		"bot": {
@@ -136,18 +137,24 @@
 			]
 		},
 		"minecraft": {
+			"description": "For the commands that take the [imageURL], the same applies as what is in the Image category description",
 			"commands": [
 				"account             <member>",
+				"blockify            [imageURL]",
 				"cape                [name]",
 				"cem                 [entity]",
 				"head                [name]",
 				"mcwiki              [searchTerm]",
+				"namehistory         [name]",
+				"playerhead          [url]",
 				"pmcmap              [searchTerm]",
 				"pmcmember           [searchTerm]",
 				"pmcpack             [searchTerm]",
 				"pmcskin             [searchTerm]",
+				"renderskin          [imageURL]",
 				"setaccount          [name]",
-				"skin                [name]"
+				"skin                [name]",
+				"skinify             [imageURL]"
 			]
 		},
 		"number": {
@@ -160,6 +167,7 @@
 		"fun": {
 			"commands": [
 				"8ball               [question]",
+				"band                <member><member><member><member>",
 				"bean                <member>",
 				"beanrequest         [n/a]",
 				"charshift           [offset][text]",
@@ -169,12 +177,17 @@
 				"kill                <member>[weapon]",
 				"leet                [text]",
 				"love                [name] [name]",
+				"marry               <member><member>",
 				"mock                [text]",
+				"monke               <member><member><member><member>",
+				"monkeband           <member><member><member>",
 				"monketest           <member>",
 				"namesearch          [text]",
 				"quote               [n/a]",
 				"say                 [character][message]",
-				"textquote           [n/a]"
+				"textquote           [n/a]",
+				"unband              <member><member><member><member>",
+				"valentines          <member>"
 			]
 		},
 		"other": {
@@ -188,7 +201,8 @@
 				"imgur               [imageURL]",
 				"mock                [text]",
 				"remindme            [duration][reminder]",
-				"serverinfo          [n/a]"
+				"serverinfo          [n/a]",
+				"trans               [sourceLanguage][destinationLanguage][message]"
 			]
 		},
 		"media": {
@@ -209,16 +223,13 @@
 				"Drawing"
 			],
 			"commands": [
-				"band                <member><member><member><member>",
+				"imagesize           [imageURL]",
 				"magnify             [imageURL]",
-				"marry               <member><member>",
-				"monke               <member><member><member><member>",
-				"monkeband           <member><member><member>",
 				"palette             [imageURL]",
 				"resize              [width][height][imageURL]",
+				"rotate              [degrees][imageURL]",
 				"spritesheet         [imageURL]",
-				"squarify            [squaresize][gapsize][imageURL]",
-				"unband              <member><member><member><member>"
+				"squarify            [squaresize][gapsize][imageURL]"
 			]
 		},
 		"drawing": {
@@ -791,7 +802,43 @@
 		},
 		"spritesheet": {
 			"description": "Turn an animated GIF into a spritesheet",
-			"formatting": "imageURL"
+			"formatting": "[imageURL]"
+		},
+		"skinify": {
+			"description": "Turn any image into a minecraft skin. [sides] is optional",
+			"formatting": "[sides] [imageURL]"
+		},
+		"trans": {
+			"description": "Translate a message. Leave the command blank to view avaliable languages",
+			"formatting": "[sourceLanguage] [destinationLanguage] [message]"
+		},
+		"rotate": {
+			"description": "Rotate an image. Defaults to 90°",
+			"formatting": "[degrees] [imageURL]"
+		},
+		"imagesize": {
+			"description": "View the width and height of an image",
+			"formatting": "[imageURL]"
+		},
+		"renderskin": {
+			"description": "Render a minecraft skin to view it in 3D",
+			"formatting": "[skinURL]"
+		},
+		"namehistory": {
+			"description": "View a minecraft accounts username history",
+			"formatting": "[name]"
+		},
+		"playerhead": {
+			"description": "Generate a custom playerhead from any image. The image url be from minecraft.net, but there are ways to upload your own",
+			"formatting": "[url]"
+		},
+		"valentines": {
+			"description": "Generate a minecraft valentines for that special someone in your life",
+			"formatting": "<member>"
+		},
+		"sortchannels": {
+			"description": "Sort the channels in a category alphabetically",
+			"formatting": "<category>"
 		}
 	}
 }

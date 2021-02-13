@@ -102,7 +102,7 @@ command_block_minecart |unsupported
 elder_guardian         |unsupported
 elytra                 |unsupported
 furnace_minecart       |unsupported
-goat                   |unsupported
+glow squid             |unsupported
 hoglin                 |unsupported
 hopper_minecart        |unsupported
 llama_carpet           |unsupported
@@ -117,5 +117,5 @@ trader_llama           |unsupported
 trident                |unsupported
 wandering_trader       |unsupported
 zoglin                 |unsupported
-glow squid             |unreleased
+goat                   |unreleased
 warden                 |unreleased
