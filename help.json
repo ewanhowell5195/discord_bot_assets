@@ -786,7 +786,7 @@
 			"description": "Resume audio in a voice channel"
 		},
 		"blacklist": {
-			"description": "Channels:\nUse a Category name or ID to block all channels in the category.\nUse a Voice Channel name or ID to block the bot joining that channel.\nTag a Text Channel, or use the name or ID to block commands in that channel.\nMembers:\nTag a Member, or give their name or ID to block from being able to run certain commands.\n[command] is optional. Not specifying one will default to blocking all commands",
+			"description": "Channels:\nEnter a Category to block all channels in the category.\nEnter a Voice Channel to block the bot joining that channel.\nEnter a Text Channel to block commands in that channel.\nMembers:\nEnter a Member to block from being able to run certain commands.\n[command] is optional. Not specifying one will default to blocking all commands",
 			"formatting": "<member/channel> [command]",
 			"permissions": "Ban Members"
 		},
