@@ -50,6 +50,7 @@
 		"roles": {
 			"commands": [
 				"addrole             <member>[role]",
+				"muterole            [n/a]",
 				"removerole          <member>[role]"
 			]
 		},
@@ -59,7 +60,6 @@
 				"muteclear           <member>[slotnumber]",
 				"mutecount           <member>",
 				"mutelist            <member>",
-				"muterole            [n/a]",
 				"unmute              <member>"
 			]
 		},
@@ -246,10 +246,10 @@
 			]
 		},
 		"blacklists": {
-			"description": "Blacklists are a way to block users from running specifed commands.\n[command] is optional. Not specifying one will default to blocking all commands",
+			"description": "Blacklists are used to stop commands in certain channels, or to stop users from using certain commands.\n[command] is optional and is only avaliable for blacklisting members. Not specifying one will default to blocking all commands",
 			"commands": [
-				"blacklist           <member>[command]",
-				"removeblacklist     <member>[command]",
+				"blacklist           <member/channel>[command]",
+				"removeblacklist     <member/channel>[command]",
 				"viewblacklist       <member>"
 			]
 		}
@@ -786,17 +786,17 @@
 			"description": "Resume audio in a voice channel"
 		},
 		"blacklist": {
-			"description": "Blacklist members from being able to run certain commands.\n[command] is optional. Not specifying one will default to blocking all commands",
-			"formatting": "<member> [channel]",
+			"description": "Channels:\nUse a Category name or ID to block all channels in the category.\nUse a Voice Channel name or ID to block the bot joining that channel.\nTag a Text Channel, or use the name or ID to block commands in that channel.\nMembers:\nTag a Member, or give their name or ID to block from being able to run certain commands.\n[command] is optional. Not specifying one will default to blocking all commands",
+			"formatting": "<member/channel> [command]",
 			"permissions": "Ban Members"
 		},
 		"removeblacklist": {
-			"description": "Remove a blacklisted command from a member.\nIf a member has all commands blacklisted, leave [command] blank",
-			"formatting": "<member> [channel]",
+			"description": "Remove a blacklisted channel, or remove a blacklisted command from a member.\nIf a member has all commands blacklisted, leave [command] blank",
+			"formatting": "<member/channel> [command]",
 			"permissions": "Ban Members"
 		},
 		"viewblacklist": {
-			"description": "View the commands blacklisted for a member",
+			"description": "View all blacklisted channels, or view the commands blacklisted for a member",
 			"formatting": "<member>",
 			"permissions": "Ban Members"
 		},
