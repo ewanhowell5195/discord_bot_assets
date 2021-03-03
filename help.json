@@ -15,6 +15,7 @@
 	"categories": {
 		"moderation": {
 			"subcategories": [
+				"Modpings",
 				"Mutes",
 				"Roles",
 				"Warns",
@@ -26,6 +27,13 @@
 				"kick                <member>[reason]",
 				"purge               [amount]",
 				"unban               [userID]"
+			]
+		},
+		"modpings": {
+			"commands": [
+				"setmodping          <role>",
+				"modping             [n/a]",
+				"removemodping       [n/a]"
 			]
 		},
 		"vc": {
@@ -114,8 +122,8 @@
 		"joinroles": {
 			"commands": [
 				"listjoinroles       [n/a]",
-				"removejoinrole      [role]",
-				"setjoinrole         [role]"
+				"removejoinrole      <role>",
+				"setjoinrole         <role>"
 			]
 		},
 		"restricted": {
@@ -151,6 +159,7 @@
 				"pmcmember           [searchTerm]",
 				"pmcpack             [searchTerm]",
 				"pmcskin             [searchTerm]",
+				"removeaccount       [n/a]",
 				"renderskin          [imageURL]",
 				"setaccount          [name]",
 				"skin                [name]",
@@ -419,6 +428,9 @@
 			"description": "Tie a minecraft account to your discord, so you can run the Minecraft commands without specifying a user",
 			"formatting": "[name]"
 		},
+		"removeaccount": {
+			"description": "Remove a minecraft account from your discord"
+		},
 		"setnickname": {
 			"description": "Set a users nickname",
 			"formatting": "<member> [nickname]",
@@ -554,7 +566,7 @@
 		},
 		"setjoinrole": {
 			"description": "Set a role for members to gain when joining the server",
-			"formatting": "[role]",
+			"formatting": "<role>",
 			"permissions": "Administrator"
 		},
 		"listjoinroles": {
@@ -562,7 +574,7 @@
 		},
 		"removejoinrole": {
 			"description": "Remove a role from the list of server join roles",
-			"formatting": "[role]",
+			"formatting": "<role>",
 			"permissions": "Administrator"
 		},
 		"membercount": {
@@ -839,6 +851,18 @@
 		"sortchannels": {
 			"description": "Sort the channels in a category alphabetically",
 			"formatting": "<category>"
+		},
+		"setmodping": {
+			"description": "Set the role to use for modpings",
+			"formatting": "<role>",
+			"permissions": "Manage Roles"
+		},
+		"removemodping": {
+			"description": "Remove the role thats used with modpings",
+			"permissions": "Manage Roles"
+		},
+		"modping": {
+			"description": "Perform a modping. This pings all currently online moderators"
 		}
 	}
 }
