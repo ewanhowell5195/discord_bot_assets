@@ -207,7 +207,6 @@
 				"embed               [title][description][thumbnailURL][imageURL]",
 				"emoji               [emoji]",
 				"google              [searchTerm]",
-				"imgur               [imageURL]",
 				"mock                [text]",
 				"remindme            [duration][reminder]",
 				"serverinfo          [n/a]",
@@ -217,12 +216,8 @@
 		"media": {
 			"commands": [
 				"gif                 [tag]",
-				"movie               [name]",
-				"movieart            [name]",
 				"randomgif           [tag]",
 				"thumbnail           [name]",
-				"tv                  [name]",
-				"tvart               [name]",
 				"youtube             [name]"
 			]
 		},
@@ -333,10 +328,6 @@
 			"description": "Shows a users ID",
 			"formatting": "<member>"
 		},
-		"imgur": {
-			"description": "Upload an attatched image to Imgur",
-			"formatting": "[imageURL]"
-		},
 		"info": {
 			"description": "Get info about the bot"
 		},
@@ -368,14 +359,6 @@
 		"mock": {
 			"description": "Spongebobify some text",
 			"formatting": "[text]"
-		},
-		"movie": {
-			"description": "View the rating and overview about a movie",
-			"formatting": "[name]"
-		},
-		"movieart": {
-			"description": "View the Movie artwork of a specifed Movie",
-			"formatting": "[name]"
 		},
 		"mute": {
 			"description": "Temporarily mute a user, removing their ability to talk in chat. Defaults to 10 minutes if left blank",
@@ -442,14 +425,6 @@
 		},
 		"thumbnail": {
 			"description": "View the Thumbnail of a YouTube video",
-			"formatting": "[name]"
-		},
-		"tv": {
-			"description": "View the rating and overview about a TV series",
-			"formatting": "[name]"
-		},
-		"tvart": {
-			"description": "View the TV series artwork of a specifed TV series",
 			"formatting": "[name]"
 		},
 		"uptime": {
