@@ -81,13 +81,11 @@
 		},
 		"server": {
 				"commands": [
-				"disablenotices      [n/a]",
 				"lock                <channel>",
 				"membercount         [n/a]",
 				"setartchive         <channel>",
 				"setlogs             <channel>",
 				"setmembercounter    [channelID][text]",
-				"setnotices          <channel>",
 				"sortchannels        <category>"
 			]
 		},
@@ -130,7 +128,6 @@
 			"commands": [
 				"dm                  [memberID][message]",
 				"endbot              [n/a]",
-				"notice              [message]",
 				"reply               [channelID][memberID][reply]"
 			]
 		},
@@ -150,6 +147,7 @@
 				"account             <member>",
 				"blockify            [imageURL]",
 				"cape                [name]",
+				"capeify             [imageURL]",
 				"cem                 [entity]",
 				"head                [name]",
 				"mcwiki              [searchTerm]",
@@ -208,6 +206,7 @@
 				"emoji               [emoji]",
 				"google              [searchTerm]",
 				"mock                [text]",
+				"poll                [title; <emoji> description;...]",
 				"remindme            [duration][reminder]",
 				"serverinfo          [n/a]",
 				"trans               [sourceLanguage][destinationLanguage][message]"
@@ -495,20 +494,6 @@
 			"description": "Remove a banned words",
 			"formatting": "[word]",
 			"permissions": "Ban Members"
-		},
-		"notice": {
-			"description": "Send a bot notice",
-			"formatting": "[message]",
-			"permissions": "Bot Owner"
-		},
-		"setnotices": {
-			"description": "Set the channel for the bot notices",
-			"formatting": "<channel>",
-			"permissions": "Administrator"
-		},
-		"disablenotices": {
-			"description": "Disable notices from being sent to your server",
-			"permissions": "Administrator"
 		},
 		"leave": {
 			"description": "Make the bot leave a voice channel"
@@ -838,6 +823,14 @@
 		},
 		"modping": {
 			"description": "Perform a modping. This pings all currently online moderators"
+		},
+		"capeify": {
+			"description": "Turn any image into a Minecraft cape. [size] is optional, and goes from 1 - 10",
+			"formatting": "[size] [imageURL]"
+		},
+		"poll": {
+			"description": "Create a poll where people react to vote! Members are limited to one reaction.\nFormatting example:\n`e!poll This is the title; 😃 Option one; 😳 Option two`",
+			"formatting": "[title; <emoji> description;...]"
 		}
 	}
 }
