@@ -194,7 +194,8 @@
 				"say                 [character][message]",
 				"textquote           [n/a]",
 				"unband              <member><member><member><member>",
-				"valentines          <member>"
+				"valentines          <member>",
+				"yeet                <member><member>"
 			]
 		},
 		"other": {
@@ -831,6 +832,10 @@
 		"poll": {
 			"description": "Create a poll where people react to vote! Members are limited to one reaction.\nFormatting example:\n`e!poll This is the title; 😃 Option one; 😳 Option two`",
 			"formatting": "[title; <emoji> description;...]"
+		},
+		"yeet": {
+			"description": "Throw a member really far",
+			"formatting": "<member> <member>"
 		}
 	}
 }
