@@ -59,6 +59,7 @@
 			"commands": [
 				"addrole             <member>[role]",
 				"muterole            [n/a]",
+				"reactionroles       [title; <emoji> <role> description;...]",
 				"removerole          <member>[role]"
 			]
 		},
@@ -830,12 +831,16 @@
 			"formatting": "[size] [imageURL]"
 		},
 		"poll": {
-			"description": "Create a poll where people react to vote! Members are limited to one reaction.\nFormatting example:\n`e!poll This is the title; 😃 Option one; 😳 Option two`",
+			"description": "Create a poll where people react to vote! Members are limited to one reaction.\nFormatting example:\ne!poll This is the title; 😃 Option one; 😳 Option two",
 			"formatting": "[title; <emoji> description;...]"
 		},
 		"yeet": {
 			"description": "Throw a member really far",
 			"formatting": "<member> <member>"
+		},
+		"reactionroles": {
+			"description": "Create a message that users can react to to gain certain roles.\nFormatting example:\ne!reactionroles This is the title; 😃 roleOption one; 😳 Option two",
+			"formatting": "[title; <emoji> <role> description;...]"
 		}
 	}
 }
