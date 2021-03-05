@@ -839,7 +839,7 @@
 			"formatting": "<member> <member>"
 		},
 		"reactionroles": {
-			"description": "Create a message that users can react to to gain certain roles.\nFormatting example:\ne!reactionroles This is the title; 😃 roleOption one; 😳 Option two",
+			"description": "Create a message that users can react to to gain certain roles.\nFormatting example:\ne!reactionroles This is the title; 😃 role description; 😳 role description",
 			"formatting": "[title; <emoji> <role> description;...]"
 		}
 	}
