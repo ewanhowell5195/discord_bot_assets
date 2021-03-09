@@ -224,7 +224,7 @@
 			]
 		},
 		"images": {
-			"description": "These commands take many image inputs. Where it says [imageURL], this can be a url, member ping, uploaded image, emoji, or leave it blank to target an image/url/emoji from a previous message in the channel",
+			"description": "These commands take many image inputs. Where it says [imageURL], this can be a url, member ping, uploaded image, emoji, or leave it blank to target an image/url/emoji from a previous message in the channel. You can reply to a message to target an image in that message.",
 			"subcategories": [
 				"Drawing"
 			],
