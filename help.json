@@ -179,8 +179,8 @@
 				"bean                <member>",
 				"beanrequest         [n/a]",
 				"charshift           [offset][text]",
+				"coin                [n/a]",
 				"dadjoke             [n/a]",
-				"flip                [n/a]",
 				"joke                [n/a]",
 				"kill                <member>[weapon]",
 				"leet                [text]",
@@ -206,6 +206,7 @@
 				"define              [word]",
 				"embed               [title][description][thumbnailURL][imageURL]",
 				"emoji               [emoji]",
+				"filesize            [fileURL]",
 				"google              [searchTerm]",
 				"mock                [text]",
 				"poll                [title; <emoji> description;...]",
@@ -228,13 +229,21 @@
 				"Drawing"
 			],
 			"commands": [
+				"flip                [imageURL]",
+				"waaw                [imageURL]",
+				"woow                [imageURL]",
 				"imagesize           [imageURL]",
 				"magnify             [imageURL]",
+				"mirror              [imageURL]",
 				"palette             [imageURL]",
+				"paletteify          [imageURL]",
 				"resize              [width][height][imageURL]",
 				"rotate              [degrees][imageURL]",
 				"spritesheet         [imageURL]",
-				"squarify            [squaresize][gapsize][imageURL]"
+				"squarify            [squaresize][gapsize][imageURL]",
+				"trim                [imageURL]",
+				"waaw                [imageURL]",
+				"woow                [imageURL]"
 			]
 		},
 		"drawing": {
@@ -314,7 +323,7 @@
 			"description": "Makes the bot log off",
 			"permissions": "Bot Owner"
 		},
-		"flip": {
+		"coin": {
 			"description": "Flips a coin"
 		},
 		"head": {
@@ -841,6 +850,42 @@
 		"reactionroles": {
 			"description": "Create a message that users can react to to gain certain roles.\nFormatting example:\ne!reactionroles This is the title; 😃 role description; 😳 role description",
 			"formatting": "[title; <emoji> <role> description;...]"
+		},
+		"mirror": {
+			"description": "Mirror an image horizontally",
+			"formatting": "[imageURL]"
+		},
+		"flip": {
+			"description": "Flip an image vertically",
+			"formatting": "[imageURL]"
+		},
+		"trim": {
+			"description": "Remove the transparent pixels from the edge of an image",
+			"formatting": "[imageURL]"
+		},
+		"filesize": {
+			"description": "Determine the file size of a file",
+			"formatting": "[fileURL]"
+		},
+		"waaw": {
+			"description": "Mirror the left side of an image to the right side",
+			"formatting": "[imageURL]"
+		},
+		"woow": {
+			"description": "Mirror the right side of an image to the left side",
+			"formatting": "[imageURL]"
+		},
+		"haah": {
+			"description": "Flip the top half of an image to the bottom half",
+			"formatting": "[imageURL]"
+		},
+		"hooh": {
+			"description": "Flip the bottom half of an image to the top half",
+			"formatting": "[imageURL]"
+		},
+		"paletteify": {
+			"description": "Limit an images colour palette to a certain amount",
+			"formatting": "[colourCount] [imageURL]"
 		}
 	}
 }
