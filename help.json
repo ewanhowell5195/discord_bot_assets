@@ -85,6 +85,7 @@
 				"lock                <channel>",
 				"membercount         [n/a]",
 				"setartchive         <channel>",
+				"setautotts          <channel>",
 				"setlogs             <channel>",
 				"setmembercounter    [channelID][text]",
 				"sortchannels        <category>"
@@ -159,7 +160,7 @@
 				"pmcpack             [searchTerm]",
 				"pmcskin             [searchTerm]",
 				"removeaccount       [n/a]",
-				"renderskin          [imageURL]",
+				"renderskin          [skinMode][imageURL]",
 				"setaccount          [name]",
 				"skin                [name]",
 				"skinify             [imageURL]"
@@ -280,12 +281,12 @@
 		"addbannedword": {
 			"description": "Add a banned word. If severity is left blank, it defaults to 1. Words with other characters instead of letters (such as 'h3110') are automatically handled\n\nSeverity 1 - Deletes the message\nSeverity 2 - Deletes message and warns sender\nSeverity 3 - Deletes message, warns and mutes sender",
 			"formatting": "[word][severity]",
-			"permissions": "Administrator"
+			"permissions": "Kick Members"
 		},
 		"addrole": {
 			"description": "Add a role to a mentioned user",
 			"formatting": "<member> [role]",
-			"permissions": "Ban Members"
+			"permissions": "Manage Roles"
 		},
 		"artchive": {
 			"description": "Add your artwork to the artchive!",
@@ -348,7 +349,7 @@
 		"kick": {
 			"description": "Kick a user from the server",
 			"formatting": "<member> [reason]",
-			"permissions": "Ban Members"
+			"permissions": "Kick Members"
 		},
 		"kill": {
 			"description": "Kill a user with a Minecraft death message. <member> and [weapon] are optional",
@@ -356,7 +357,7 @@
 		},
 		"listbannedwords": {
 			"description": "List all banned words",
-			"permissions": "Ban Members"
+			"permissions": "Manage Messages"
 		},
 		"love": {
 			"description": "Discover how much you love someone!",
@@ -373,17 +374,15 @@
 		"mute": {
 			"description": "Temporarily mute a user, removing their ability to talk in chat. Defaults to 10 minutes if left blank",
 			"formatting": "<member> [time] [length] [reason]",
-			"permissions": "Ban Members"
+			"permissions": "Kick Members"
 		},
 		"mutecount": {
 			"description": "Show how many times a user has been muted",
-			"formatting": "<member>",
-			"permissions": "Ban Members"
+			"formatting": "<member>"
 		},
 		"mutelist": {
 			"description": "Show a description of every mute a user has had",
-			"formatting": "<member>",
-			"permissions": "Ban Members"
+			"formatting": "<member>"
 		},
 		"namesearch": {
 			"description": "Search for users with certain text in their name",
@@ -399,7 +398,7 @@
 		"purge": {
 			"description": "Bulk delete messages from a channel. Defaults to 5 if left blank",
 			"formatting": "[amount]",
-			"permissions": "Ban Members"
+			"permissions": "Manage Messages"
 		},
 		"randomnumber": {
 			"description": "Generates a random number between two numbers",
@@ -408,7 +407,7 @@
 		"removerole": {
 			"description": "Remove a role from a mentioned user",
 			"formatting": "<member> [role]",
-			"permissions": "Ban Members"
+			"permissions": "Manage Roles"
 		},
 		"say": {
 			"description": "Make a character say a message of your choice. [character] is optional",
@@ -427,7 +426,7 @@
 		"setnickname": {
 			"description": "Set a users nickname",
 			"formatting": "<member> [nickname]",
-			"permissions": "Ban Members"
+			"permissions": "Manage Nicknames"
 		},
 		"skin": {
 			"description": "Get a Minecraft Java users Minecraft skin",
@@ -447,22 +446,20 @@
 		"warn": {
 			"description": "Warns a user",
 			"formatting": "<member> [reason]",
-			"permissions": "Ban Members"
+			"permissions": "Kick Members"
 		},
 		"warnclear": {
 			"description": "Clear warns from a user",
 			"formatting": "<member> [number]",
-			"permissions": "Administrator"
+			"permissions": "Kick Members"
 		},
 		"warncount": {
 			"description": "Show how many times a user has been warned",
-			"formatting": "<member>",
-			"permissions": "Ban Members"
+			"formatting": "<member>"
 		},
 		"warnlist": {
 			"description": "Show a description of every warn a user has had",
-			"formatting": "<member>",
-			"permissions": "Ban Members"
+			"formatting": "<member>"
 		},
 		"youtube": {
 			"description": "Search for a YouTube video",
@@ -475,22 +472,22 @@
 		"setartchive": {
 			"description": "Set the channel for the Artchive command",
 			"formatting": "<channel>",
-			"permissions": "Administrator"
+			"permissions": "Manage Channels"
 		},
 		"setlogs": {
 			"description": "Set the channel for the server logs",
 			"formatting": "<channel>",
-			"permissions": "Administrator"
+			"permissions": "Manage Channels"
 		},
 		"muteclear": {
 			"description": "Clear a mute from a member",
 			"formatting": "<member> [slotnumber]",
-			"permissions": "Ban Members"
+			"permissions": "Kick Members"
 		},
 		"unmute": {
 			"description": "Unmute a muted member",
 			"formatting": "<member>",
-			"permissions": "Ban Members"
+			"permissions": "Kick Members"
 		},
 		"support": {
 			"description": "Request support for the bot. Just send your message after the command and we will get back to you asap.",
@@ -504,7 +501,7 @@
 		"removebannedword": {
 			"description": "Remove a banned words",
 			"formatting": "[word]",
-			"permissions": "Ban Members"
+			"permissions": "Kick Members"
 		},
 		"leave": {
 			"description": "Make the bot leave a voice channel"
@@ -516,7 +513,7 @@
 		"customembed": {
 			"description": "Change the bots embed colour",
 			"formatting": "[colour]",
-			"permissions": "Administrator"
+			"permissions": "Manage Roles"
 		},
 		"tts": {
 			"description": "Text to speech some text. The [language] is optional. The language must be inside [] for it to register",
@@ -538,7 +535,7 @@
 		"setjoinrole": {
 			"description": "Set a role for members to gain when joining the server",
 			"formatting": "<role>",
-			"permissions": "Administrator"
+			"permissions": "Manage Roles"
 		},
 		"listjoinroles": {
 			"description": "List all the currently set server join roles"
@@ -546,7 +543,7 @@
 		"removejoinrole": {
 			"description": "Remove a role from the list of server join roles",
 			"formatting": "<role>",
-			"permissions": "Administrator"
+			"permissions": "Manage Roles"
 		},
 		"membercount": {
 			"description": "Display the number of members currently in the server"
@@ -557,7 +554,7 @@
 		"setmembercounter": {
 			"description": "Set a channel to use to display the current member count.\nA `!` must be used in the custom text to indicate the number, for example: `e!setmembercount [channelID] Current Members: !`",
 			"formatting": "[channelID] [text]",
-			"permissions": "Administrator"
+			"permissions": "Manage Channels"
 		},
 		"squarify": {
 			"description": "Squarifies images. The first number is the square size, the second is the size of the gap between them which is removed",
@@ -645,7 +642,7 @@
 		"lock": {
 			"description": "Toggle on and off everyone's ability to send messages in a channel",
 			"formatting": "<channel>",
-			"permissions": "Ban Members"
+			"permissions": "Manage Messages"
 		},
 		"alias": {
 			"description": "Show the aliases for a command",
@@ -722,7 +719,7 @@
 		"muterole": {
 			"description": "Creates a role named Muted (if there isn't already one) and then moves it as high up the role list as possible.\nThen it sets permissions on all channels to disable sending messages and adding reactions",
 			"formatting": "[command]",
-			"permissions": "Administrator"
+			"permissions": "Manage Roles"
 		},
 		"website": {
 			"description": "Get a link to the bot creators website"
@@ -754,10 +751,10 @@
 		"dadjoke": {
 			"description": "Generate a dad joke"
 		},
-		"settts": {
+		"setautotts": {
 			"description": "Set the channel where messages to be automatically read out load in a voice channel as TTS\nUsers not in a voice channel, and urls are ignored.",
 			"formatting": "<channel>",
-			"permissions": "Administrator"
+			"permissions": "Manage Channels"
 		},
 		"stop": {
 			"description": "Stop audio in a voice channel"
@@ -771,17 +768,16 @@
 		"blacklist": {
 			"description": "Channels:\nEnter a Category to block all channels in the category.\nEnter a Voice Channel to block the bot joining that channel.\nEnter a Text Channel to block commands in that channel.\nMembers:\nEnter a Member to block from being able to run certain commands.\n[command] is optional. Not specifying one will default to blocking all commands",
 			"formatting": "<member/channel> [command]",
-			"permissions": "Ban Members"
+			"permissions": "Manage Channels"
 		},
 		"removeblacklist": {
 			"description": "Remove a blacklisted channel, or remove a blacklisted command from a member.\nIf a member has all commands blacklisted, leave [command] blank",
 			"formatting": "<member/channel> [command]",
-			"permissions": "Ban Members"
+			"permissions": "Manage Channels"
 		},
 		"viewblacklist": {
 			"description": "View all blacklisted channels, or view the commands blacklisted for a member",
-			"formatting": "<member>",
-			"permissions": "Ban Members"
+			"formatting": "<member>"
 		},
 		"spritesheet": {
 			"description": "Turn an animated GIF into a spritesheet",
@@ -804,8 +800,8 @@
 			"formatting": "[imageURL]"
 		},
 		"renderskin": {
-			"description": "Render a minecraft skin to view it in 3D",
-			"formatting": "[skinURL]"
+			"description": "Render a minecraft skin to view it in 3D. [skinMode] is optional, but can be set to \"slim\" to render a skin with 3px wide arms",
+			"formatting": "[skinMode][skinURL]"
 		},
 		"namehistory": {
 			"description": "View a minecraft accounts username history",
@@ -821,7 +817,8 @@
 		},
 		"sortchannels": {
 			"description": "Sort the channels in a category alphabetically",
-			"formatting": "<category>"
+			"formatting": "<category>",
+			"permissions": "Manage Channels"
 		},
 		"setmodping": {
 			"description": "Set the role to use for modpings",
@@ -886,6 +883,12 @@
 		"paletteify": {
 			"description": "Limit an images colour palette to a certain amount",
 			"formatting": "[colourCount] [imageURL]"
+		},
+		"queue": {
+			"description": "View the queued up music in a voice channel"
+		},
+		"shuffle": {
+			"description": "Shuffle the order of the songs in the music queue"
 		}
 	}
 }
