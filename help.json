@@ -103,6 +103,7 @@
 				"contact             [n/a]",
 				"credits             [n/a]",
 				"customembed         [colour]",
+				"defaultemojistats   [n/a]",
 				"disable             [command]",
 				"disabled            [n/a]",
 				"help                [command]",
@@ -111,6 +112,7 @@
 				"ping                [n/a]",
 				"prefix              [prefix]",
 				"prefixlessmode      [n/a]",
+				"requestemoji        [emoji]",
 				"reset               [n/a]",
 				"servers             [n/a]",
 				"support             [message]",
@@ -130,7 +132,8 @@
 			"commands": [
 				"dm                  [memberID][message]",
 				"endbot              [n/a]",
-				"reply               [channelID][memberID][reply]"
+				"reply               [channelID][memberID][reply]",
+				"setemoji            [emoji][url]"
 			]
 		},
 		"user": {
@@ -889,6 +892,18 @@
 		},
 		"shuffle": {
 			"description": "Shuffle the order of the songs in the music queue"
+		},
+		"requestemoji": {
+			"description": "Request a default emoji to be added to the bots emoji database",
+			"formatting": "[emoji]"
+		},
+		"setemoji": {
+			"description": "Add an emoji to the bots emoji database. The url must be the emojis svg url. You can get the url by right clicking a default emoji and then clicking \"Copy Link\"",
+			"formatting": "[emoji][url]",
+			"permissions": "Ban Members\n- only in GuildID = 736777568182861944"
+		},
+		"defaultemojistats": {
+			"description": "View how many default emoji are in the bots emoji database"
 		}
 	}
 }
