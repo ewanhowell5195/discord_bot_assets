@@ -234,8 +234,8 @@
 			],
 			"commands": [
 				"flip                [imageURL]",
-				"waaw                [imageURL]",
-				"woow                [imageURL]",
+				"haah                [imageURL]",
+				"hooh                [imageURL]",
 				"imagesize           [imageURL]",
 				"magnify             [imageURL]",
 				"mirror              [imageURL]",
