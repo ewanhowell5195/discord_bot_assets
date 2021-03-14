@@ -1214,8 +1214,7 @@
 		],
 		"unreleased": [
 			"goat",
-			"warden",
-			"test"
+			"warden"
 		]
 	}
 }
