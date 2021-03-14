@@ -235,11 +235,14 @@
 			],
 			"commands": [
 				"flip                [imageURL]",
+				"grayscale           [imageURL]",
 				"haah                [imageURL]",
 				"hooh                [imageURL]",
 				"imagesize           [imageURL]",
+				"invert              [imageURL]",
 				"magnify             [imageURL]",
 				"mirror              [imageURL]",
+				"noiseify            [imageURL]",
 				"palette             [imageURL]",
 				"paletteify          [imageURL]",
 				"resize              [width][height][imageURL]",
@@ -910,6 +913,18 @@
 			"description": "Set the slowmode length for a channel.",
 			"formatting": "<channel> [length]",
 			"permissions": "Manage Channels"
+		},
+		"noiseify": {
+			"description": "Shuffle an images pixels into noise.",
+			"formatting": "[imageURL]"
+		},
+		"invert": {
+			"description": "Invert an images colour.",
+			"formatting": "[imageURL]"
+		},
+		"grayscale": {
+			"description": "Turn an image grayscale.",
+			"formatting": "[imageURL]"
 		}
 	}
 }
