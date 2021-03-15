@@ -198,6 +198,7 @@
 				"namesearch          [text]",
 				"quote               [n/a]",
 				"say                 [character][message]",
+				"snap                <member><member>",
 				"textquote           [n/a]",
 				"unband              <member><member><member><member>",
 				"valentines          <member>",
@@ -238,6 +239,7 @@
 				"grayscale           [imageURL]",
 				"haah                [imageURL]",
 				"hooh                [imageURL]",
+				"hueshift            [angle][imageURL]",
 				"imagesize           [imageURL]",
 				"invert              [imageURL]",
 				"magnify             [imageURL]",
@@ -245,8 +247,10 @@
 				"noiseify            [imageURL]",
 				"palette             [imageURL]",
 				"paletteify          [imageURL]",
+				"rainbow             [speed][direction][imageURL]",
 				"resize              [width][height][imageURL]",
 				"rotate              [degrees][imageURL]",
+				"spin                [speed][direction][expandMode][imageURL]",
 				"spritesheet         [imageURL]",
 				"squarify            [squaresize][gapsize][imageURL]",
 				"trim                [imageURL]",
@@ -713,6 +717,7 @@
 		},
 		"blockify": {
 			"description": "Turn an image into Minecraft block art!",
+			"cooldown": 5,
 			"formatting": "[imageURL]"
 		},
 		"monke": {
@@ -925,6 +930,25 @@
 		"grayscale": {
 			"description": "Turn an image grayscale.",
 			"formatting": "[imageURL]"
+		},
+		"snap": {
+			"description": "Snap a user out of existence.",
+			"formatting": "[imageURL]"
+		},
+		"spin": {
+			"description": "Make an image spin!\n[direction] is \"forwards/backwards/on/off\".\nSpeed is a number, the larger, the slower.\n[expand] is \"on/off\".]",
+			"cooldown": 5,
+			"formatting": "[speed] [direction] [expandMode] [imageURL]"
+		},
+		"hueshift": {
+			"description": "Change the hue of an image.",
+			"cooldown": 3,
+			"formatting": "[angle] [imageURL]"
+		},
+		"spin": {
+			"description": "Make an image cycle through the rainbow!\n[direction] is \"forwards/backwards/on/off\".\nSpeed is a number, the larger, the slower.",
+			"cooldown": 5,
+			"formatting": "[speed] [direction] [imageURL]"
 		}
 	}
 }
