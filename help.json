@@ -945,7 +945,7 @@
 			"cooldown": 3,
 			"formatting": "[angle] [imageURL]"
 		},
-		"spin": {
+		"rainbow": {
 			"description": "Make an image cycle through the rainbow!\n[direction] is \"forwards/backwards/on/off\".\nSpeed is a number, the larger, the slower.",
 			"cooldown": 5,
 			"formatting": "[speed] [direction] [imageURL]"
