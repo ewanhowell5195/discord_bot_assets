@@ -385,6 +385,12 @@
 					"tail3"
 				]
 			},
+			"head_creeper": {
+				"display_name": "Creeper Head",
+				"bones": [
+					"head"
+				]
+			},
 			"head_dragon": {
 				"display_name": "Dragon Head",
 				"bones": [

@@ -27,6 +27,7 @@ fox                    |head, body, leg1, leg2, leg3, leg4, tail
 ghast                  |body, tentacle1, tentacle2, tentacle3, tentacle4, tentacle5, tentacle6, tentacle7, tentacle8, tentacle9
 giant                  |head, headwear, body, left_arm, right_arm, left_leg, right_leg
 guardian               |body, eye, spine1, spine2, spine3, spine4, spine5, spine6, spine7, spine8, spine9, spine10, spine11, spine12, tail1, tail2, tail3
+head_creeper           |head
 head_dragon            |head, jaw
 head_player            |head
 head_skeleton          |head
