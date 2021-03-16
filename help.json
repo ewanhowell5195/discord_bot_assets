@@ -132,7 +132,6 @@
 		"restricted": {
 			"commands": [
 				"dm                  [memberID][message]",
-				"endbot              [n/a]",
 				"reply               [channelID][memberID][reply]",
 				"setemoji            [emoji][url]"
 			]
@@ -330,10 +329,6 @@
 		"dice": {
 			"description": "Throw between 1 and 3 dice.",
 			"formatting": "[amount]"
-		},
-		"endbot": {
-			"description": "Makes the bot log off.",
-			"permissions": "Bot Owner"
 		},
 		"coin": {
 			"description": "Flips a coin."
@@ -591,6 +586,7 @@
 		},
 		"fill": {
 			"description": "Fill a closed on an image with colour.",
+			"cooldown": 10,
 			"formatting": "[x] [y] [colour] [tolerance] [imageURL]"
 		},
 		"image": {
